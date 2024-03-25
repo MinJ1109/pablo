@@ -1935,7 +1935,7 @@ input[type="radio"]:not(.star):checked{
         padding-right: 2.86%; padding-left: 2.86%;
     }
     header + [class$='Container']{
-        padding-top: 220px;
+        padding-top: 210px;
     }
     .mainContainer .collaboSlider + div,
     .listContainer, .prodDeContainer,
@@ -2237,10 +2237,10 @@ input[type="radio"]:not(.star):checked{
         position: fixed; z-index: 10; width: 100%; background-color: #fff;
     }
     header div{
-        position: relative; max-height: 140px;
+        position: relative; max-height: 130px;
     }
     header div *{
-        font-weight: 500; color: #757575; line-height: 140px;
+        font-weight: 500; color: #757575; line-height: 130px;
     }
     header div > input:first-child{
         display: none;
@@ -2253,10 +2253,10 @@ input[type="radio"]:not(.star):checked{
         margin: 0 auto; max-width: 171px;
     }
     header div h1 a{
-        display: block;   
+        display: block;
     }
     header div h1 a img{
-        width: 100%; vertical-align: middle;
+        width: 100%; vertical-align: middle; margin-bottom: 5px;
     }
     header div span{
        position: absolute; top: 0; right: 2.86%;
@@ -2287,7 +2287,7 @@ input[type="radio"]:not(.star):checked{
         display: inline-block;
     }
     header nav ul li a{
-        text-decoration: none; display: block;  max-height: 78px;
+        text-decoration: none; display: block;
         box-sizing: border-box; line-height: 78px; font-weight: 500; color: #242424;
     }
     header nav ul li a.active{
