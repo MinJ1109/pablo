@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/anotherjsfile.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="checkOut.html">
+                <ul>
+                    <li>
+                        <a href="prodDe_acc_bandana_01.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="cartMain.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="list_allProducts01.html" class="blackBtn">START SHOPPING</a></span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="myAccountMain.html">Account</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div class="payStep03Container">
+        <form action="payCompleted.html">
+            <div>
+                <div>
+                    <div>
+                        <ol>
+                            <li>Information</li>
+                            <li>Delivery</li>
+                            <li class="active">Payment</li>
+                        </ol>
+                        <ul>
+                            <li>
+                                <span>Contact</span>
+                                <span>minmin001109@gmail.com</span>
+                            </li>
+                            <li>
+                                <span>Ship to</span>
+                                <span>Room 000, ABC Apartment, Na-dong, 00 Songnae-daero 00 beon-gil, Bucheon, Gyeonggi- do (Songnae-dong), Bucheon, 12345, South Korea</span>
+                            </li>
+                            <li>
+                                <span>Shipping method</span>
+                                <span>Standard International (6 to 27 business days)</span>
+                            </li>
+                        </ul>
+                        <fieldset>
+                            <legend>Payment</legend>
+                            <p>We never store your credit card information and all transactions are secured!</p>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="paymenType" id="credit" checked>
+                                        <label for="credit">Credit card</label>
+                                        <img src="images/ico_payment01.png" alt="amex card">
+                                    </div>
+                                    <div id="creditOpen" class="active">
+                                        <input type="text" class="inputEnterBoxPay" placeholder="Card number" maxlength="19" title="Enter your Card number">
+                                        <input type="text" class="inputEnterBoxPay" placeholder="Expiration date (MM / YY)" title="Enter your Expiration date (MM / YY)" >
+                                        <input type="number" class="inputEnterBoxPay" placeholder="Security code" title="Enter your Security code" >
+                                        <input type="text" class="inputEnterBoxPay" placeholder="Name on card" title="Enter your Name on card" >
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="paymenType" id="afterPay">
+                                        <label for="afterPay">Afterpay</label>
+                                        <img src="images/ico_payment05.png" alt="after pay">
+                                    </div>
+                                    <div id="afterPayOpen">
+                                        <p>After clicking “Complete order”, you will be redirected to
+                                            Afterpay to complete your purchase securely</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Billing Address</legend>
+                            <p>Select the address that matches your card or payment method.</p>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="billingAddr" id="sameAddr" checked>
+                                        <label for="sameAddr">Same as shipping address</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <input type="radio" name="billingAddr" id="newAddr">
+                                        <label for="newAddr">Use a different billing address</label>
+                                    </div>
+                                    <div id="newAddrOpen">
+                                        <span>
+                                            <select id="choseCountry">
+                                                <option selected>South Korea</option>
+                                                <option>United States</option>
+                                                <option>Vatican City</option>
+                                            </select>
+                                        </span>
+                                        <input type="text" class="inputEnterBoxPay" placeholder="First Name" title="Enter your First Name" >
+                                        <input type="text" class="inputEnterBoxPay" placeholder="Last Name" title="Enter your Last Name" >
+                                        <input type="text" id="enterAddress" class="inputEnterBoxPay" placeholder="Enter your Street Address" title="Enter your Street Address" >
+                                        <input type="text" class="inputEnterBoxPay" placeholder="Apartment, suite, etc. (optional)" title="Enter your Apartment, suite, etc. (optional)">
+                                        <input type="text" id="enterCity" class="inputEnterBoxPay" placeholder="Enter your City" title="Enter your City" >
+                                        <span>
+                                            <select id="choseProvince">
+                                                <option selected>Incheon</option>
+                                                <option>Gyeonggi</option>
+                                                <option>Jeju</option>
+                                                <option>Seoul</option>
+                                            </select>
+                                        </span>
+                                        <input type="text" id="enterZip" class="inputEnterBoxPay" placeholder="Enter your Zip Code" title="Enter your Zip Code" >
+                                        <div>
+                                            <input type="number" class="inputEnterBoxPay" id="enterPhone" placeholder="Enter your Phone Number" title="Enter your Phone Number" >
+                                            <input type="button" value="phoneNumbInfo" data-popup="phoneNumbInfo" >
+                                            <p id="phoneNumbInfo">In case we need to contact you about your order</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <span>
+                            <label for="saveInfo">Save my information for a faster checkout</label>
+                            <input type="checkbox" id="saveInfo">
+                        </span>
+                        <a href="delivery.html" class="underline_a8">Back</a>
+                        <input type="submit" value="COMPLETE ORDER" class="blackBtn">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2>
+                            Show order summary
+                        </h2>
+                        <span  class="fontQuick">₩<strong class="fontQuick">38,860</strong></span>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                                <div>
+                                    <dl>
+                                        <dt>
+                                            In Bloom - Dog Bandana
+                                            <small>M</small>
+                                            <span>Qty : <span>1</span></span>
+                                        </dt>
+                                        <dd class="fontQuick">
+                                            ₩<strong class="fontQuick">20,000</strong>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </li>
+                        </ul>
+                        <input type="text" class="inputEnterBoxPay" id="enterDiscount" placeholder="Discount code or gift card" title="Enter discount code or gift card">
+                        <input type="button" value="APPLY" class="blackBtn">
+                        <ul>
+                            <li>
+                                Subtotal
+                                <strong class="fontQuick">₩20,000</strong>
+                            </li>
+                            <li>
+                                Shipping
+                                <strong class="fontQuick">₩14,000</strong>
+                            </li>
+                            <li>
+                                Estimated taxes
+                                <strong class="fontQuick">₩4,860</strong>
+                            </li>
+                            <li>
+                                Total
+                                <strong class="fontQuick">₩38,860</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>

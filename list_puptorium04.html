@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="checkOut.html">
+                <ul>
+                    <li>
+                        <a href="prodDe_acc_bandana_01.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="cartMain.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="list_allProducts01.html" class="blackBtn">START SHOPPING</a></span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="myAccountMain.html">Account</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html" class="active">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <section class="listContainer">
+        <h2>Puptorium</h2>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <span class="selectBox">
+                <select>
+                    <option>Best selling</option>
+                    <option selected>Alphabetically, A-Z</option>
+                    <option>Alphabetically, Z-A</option>
+                    <option>Price, low to high</option>
+                    <option>Price, high to low</option>
+                    <option>Date, old to new</option>
+                    <option>Date, new to old</option>
+                </select>
+            </span>
+        </div>
+        <div>
+            <aside id="filterPanel">
+                <h3>Filter</h3>
+                <input type="button" value="close" class="closeBtn">
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="hideOutProd">
+                            <label for="hideOutProd">Hide out of stock products</label>
+                        </li>
+                        <li>
+                            <h4 class="filterH4">Price
+                                <span>arrow</span>
+                            </h4> 
+                            <div>
+                                <div>
+                                    <span class="fontQuick">₩</span>
+                                    <input type="text" class="fontQuick" placeholder="1,000" title="Please enter a minimum price">
+                                </div>
+                                ~
+                                <div>
+                                    <span class="fontQuick">₩</span>
+                                    <input type="text" class="fontQuick" placeholder="999,999" title="Please enter the maximum price">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="filterH4">Product type
+                                <span>arrow</span>
+                            </h4>
+                            <ol>
+                                <li>
+                                    <input type="checkbox" id="groomingOnly">
+                                    <label for="groomingOnly">grooming essentials</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="bowlsOnly">
+                                    <label for="bowlsOnly">bowls &amp; feeding mats</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="treatsOnly">
+                                    <label for="treatsOnly">treats</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="booksOnly">
+                                    <label for="booksOnly">books</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="earringsOnly">
+                                    <label for="earringsOnly">pet earrings &amp; key rings</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="artOnly">
+                                    <label for="artOnly">art prints & greeting cards</label>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_petEarringsKeyrings_05.png" alt="Image of the 'Schnauzer Pet Earrings'">
+                        <a href="prodDe_puptorium_petEarringsKeyrings_05.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Schnauzer Pet Earrings</dt>
+                        <dd>
+                            <strong class="fontQuick">₩53,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_bowls_08.png" alt="Image of the 'Spin Interactive Adjustable Slow Feeder Bowl for Cats and Dogs'">
+                        <a href="prodDe_puptorium_bowls_08.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Spin Interactive Adjustable Slow Feeder Bowl for Cats and Dogs</dt>
+                        <dd>
+                            <strong class="fontQuick">₩32,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_bowls_07.png" alt="Image of the 'JSpin UFO Maze Interactive Dog Bowl and Slow Feeder'">
+                        <a href="prodDe_puptorium_bowls_07.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Spin UFO Maze Interactive Dog Bowl and Slow Feeder</dt>
+                        <dd>
+                            <strong class="fontQuick">₩34,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_book_02.png" alt="Image of the 'The Book of Dog Poems'">
+                        <a href="prodDe_puptorium_book_02.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>The Book of Dog Poems</dt>
+                        <dd>
+                            <strong class="fontQuick">₩29,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_book_07.png" alt="Image of the 'THE DOG PAWSONALITY TEST">
+                        <a href="prodDe_puptorium_book_07.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>THE DOG PAWSONALITY TEST</dt>
+                        <dd>
+                            <strong class="fontQuick">₩21,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_bowls_01.png" alt="Image of the 'The Lick Mat: Pablo & Co.'">
+                        <a href="prodDe_puptorium_bowls_01.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>The Lick Mat: Pablo & Co.</dt>
+                        <dd>
+                            <strong class="fontQuick">₩17,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_book_08.png" alt="Image of the 'The Little Book of Dogs'">
+                        <a href="prodDe_puptorium_book_08.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>The Little Book of Dogs</dt>
+                        <dd>
+                            <strong class="fontQuick">₩14,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_treats_07.png" alt="Image of the 'Wad U Say? - Cow Ears'">
+                        <a href="prodDe_puptorium_treats_07.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Wad U Say? - Cow Ears</dt>
+                        <dd>
+                            <strong class="fontQuick">₩14,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_groomingEssentials_07.png" alt="Image of the 'Wag & Bright: Puppy Polish Natural Dog Toothpaste'">
+                        <a href="prodDe_puptorium_groomingEssentials_07.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Wag & Bright: Puppy Polish Natural Dog Toothpaste</dt>
+                        <dd>
+                            <strong class="fontQuick">₩24,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_groomingEssentials_08.png" alt="Image of the 'Wag & Bright: Puppy Polisher Silicone BPA Free Finger Brush'">
+                        <a href="prodDe_puptorium_groomingEssentials_08.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Wag & Bright: Puppy Polisher Silicone BPA Free Finger Brush</dt>
+                        <dd>
+                            <strong class="fontQuick">₩14,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_treats_08.png" alt="Image of the 'You Croc My World - Crocodile Tail'">
+                        <a href="prodDe_puptorium_treats_08.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>You Croc My World - Crocodile Tail</dt>
+                        <dd>
+                            <strong class="fontQuick">₩16,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_puptorium_bowls_06.png" alt="Image of the 'Zippy Paws SmartyPaws Puzzler Feeder Interactive Dog Toy'">
+                        <a href="prodDe_puptorium_bowls_06.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Zippy Paws SmartyPaws Puzzler Feeder Interactive Dog Toy</dt>
+                        <dd>
+                            <strong class="fontQuick">₩23,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="pager notAll">
+            <span>
+                <a href="list_puptorium01.html">prevPageline</a>
+                <a href="list_puptorium03.html">prev</a>
+            </span>
+            <ol>
+                <li><a href="list_puptorium01.html">1</a></li>
+                <li><a href="list_puptorium02.html">2</a></li>
+                <li><a href="list_puptorium03.html">3</a></li>
+                <li><a href="list_puptorium04.html" class="active">4</a></li>
+            </ol>
+            <span>
+                <a href="#">next</a>
+                <a href="#">nextPageline</a>
+            </span>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>

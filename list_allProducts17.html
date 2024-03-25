@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="checkOut.html">
+                <ul>
+                    <li>
+                        <a href="prodDe_acc_bandana_01.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="cartMain.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="list_allProducts01.html" class="blackBtn">START SHOPPING</a></span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="myAccountMain.html">Account</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html" class="active">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <section class="listContainer">
+        <h2>Products</h2>
+        <div>
+            <input type="button" value="Filter" data-panel="filterPanel">
+            <span class="selectBox">
+                <select>
+                    <option>Best selling</option>
+                    <option selected>Alphabetically, A-Z</option>
+                    <option>Alphabetically, Z-A</option>
+                    <option>Price, low to high</option>
+                    <option>Price, high to low</option>
+                    <option>Date, old to new</option>
+                    <option>Date, new to old</option>
+                </select>
+            </span>
+        </div>
+        <div>
+            <aside id="filterPanel">
+                <h3>Filter</h3>
+                <input type="button" value="close" class="closeBtn">
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="hideOutProd">
+                            <label for="hideOutProd">Hide out of stock products</label>
+                        </li>
+                        <li>
+                            <h4 class="filterH4">Price
+                                <span>arrow</span>
+                            </h4> 
+                            <div>
+                                <div>
+                                    <span class="fontQuick">₩</span>
+                                    <input type="text" class="fontQuick" placeholder="1,000" title="Please enter a minimum price">
+                                </div>
+                                ~
+                                <div>
+                                    <span class="fontQuick">₩</span>
+                                    <input type="text" class="fontQuick" placeholder="999,999" title="Please enter the maximum price">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="filterH4">Product type
+                                <span>arrow</span>
+                            </h4>
+                            <ol>
+                                <li>
+                                    <input type="checkbox" id="walkiesOnly">
+                                    <label for="walkiesOnly">walkies</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="accessoriesOnly">
+                                    <label for="accessoriesOnly">accessories</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="travelOnly">
+                                    <label for="travelOnly">travel</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="wearOnly">
+                                    <label for="wearOnly">wear</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="collaborationsOnly">
+                                    <label for="collaborationsOnly">collaborations</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="puptoriumOnly">
+                                    <label for="puptoriumOnly">puptorium</label>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <ul>
+                <li>
+                    <div>
+                        <img src="images/prod_travel_LicensedCarSeatCovers_02.png" alt="Image of the 'Surfin' Stitch: Single Car Seat Cover'">
+                        <a href="prodDe_travel_LicensedCarSeatCovers_02.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Surfin' Stitch: Single Car Seat Cover</dt>
+                        <dd>
+                            <strong class="fontQuick">₩79,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_wear_dogOnesies_05.png" alt="Image of the 'Sweet Dreams: Onesie'">
+                        <a href="prodDe_wear_dogOnesies_05.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Sweet Dreams: Onesie</dt>
+                        <dd>
+                            <strong class="fontQuick">₩38,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_travel_carBootCovers_05.png" alt="Image of the 'Tartan: Deluxe Car Boot Cover'">
+                        <a href="prodDe_travel_carBootCovers_05.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Tartan: Deluxe Car Boot Cover</dt>
+                        <dd>
+                            <strong class="fontQuick">₩140,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_travel_HammockCarSeatCovers_05.png" alt="Image of the 'Tartan: Deluxe Hammock Car Seat Cover'">
+                        <a href="prodDe_travel_HammockCarSeatCovers_05.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Tartan: Deluxe Hammock Car Seat Cover</dt>
+                        <dd>
+                            <strong class="fontQuick">₩144,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_walkies_harness_07.png" alt="Image of the 'Tartan: No Pull Adventure Harness'">
+                        <a href="prodDe_walkies_harness_07.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Tartan: No Pull Adventure Harness</dt>
+                        <dd>
+                            <strong class="fontQuick">₩53,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_wear_dogOnesies_02.png" alt="Image of the 'Teddy Bears Picnic: Onesie'">
+                        <a href="prodDe_wear_dogOnesies_02.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Teddy Bears Picnic: Onesie</dt>
+                        <dd>
+                            <strong class="fontQuick">₩38,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_walkies_harness_06.png" alt="Image of the 'Terracotta: Adjustable Harness'">
+                        <a href="prodDe_walkies_harness_06.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Terracotta: Adjustable Harness</dt>
+                        <dd>
+                            <strong class="fontQuick">₩31,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_walkies_poopBag_01.png" alt="Image of the 'Terrazzo - Poop Bag Holder'">
+                        <a href="prodDe_walkies_poopBag_01.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>Terrazzo - Poop Bag Holder</dt>
+                        <dd>
+                            <strong class="fontQuick">₩16,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_walkies_leashSpl_02.png" alt="Image of the 'That Leopard Print: Adjustable Leash Splitter'">
+                        <a href="prodDe_walkies_leashSpl_02.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>That Leopard Print: Adjustable Leash Splitter</dt>
+                        <dd>
+                            <strong class="fontQuick">₩22,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_walkies_leashes_01.png" alt="Image of the 'That Leopard Print: Dog Leash'">
+                        <a href="prodDe_walkies_leashes_01.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>That Leopard Print: Dog Leash</dt>
+                        <dd>
+                            <strong class="fontQuick">₩25,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_wear_blankets_07.png" alt="Image of the 'The Bark Club: Blanket Hoodie'">
+                        <a href="prodDe_wear_blankets_07.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>The Bark Club: Blanket Hoodie</dt>
+                        <dd>
+                            <strong class="fontQuick">₩79,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_wear_blankets_08.png" alt="Image of the 'The Bark Club: Dog Blanket'">
+                        <a href="prodDe_wear_blankets_08.html" class="whiteBtn">More Details</a>
+                    </div>
+                    <dl>
+                        <dt>The Bark Club: Dog Blanket</dt>
+                        <dd>
+                            <strong class="fontQuick">₩40,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div class="pager allPro">
+            <span>
+                <a href="list_allProducts01.html">prevPageline</a>
+                <a href="list_allProducts16.html">prev</a>
+            </span>
+            <ol>
+                <li><a href="list_allProducts11.html">11</a></li>
+                <li><a href="list_allProducts12.html">12</a></li>
+                <li><a href="list_allProducts13.html">13</a></li>
+                <li><a href="list_allProducts14.html">14</a></li>
+                <li><a href="list_allProducts15.html">15</a></li>
+                <li><a href="list_allProducts16.html">16</a></li>
+                <li><a href="list_allProducts17.html"class="active">17</a></li>
+                <li><a href="list_allProducts18.html">18</a></li>
+                <li><a href="list_allProducts19.html">19</a></li>
+                <li><a href="list_allProducts20.html">20</a></li>
+            </ol>
+            <span>
+                <a href="list_allProducts18.html">next</a>
+                <a href="list_allProducts21.html">nextPageline</a>
+            </span>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>

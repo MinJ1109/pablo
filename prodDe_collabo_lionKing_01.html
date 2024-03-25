@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form> 
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="checkOut.html">
+                <ul>
+                    <li>
+                        <a href="prodDe_acc_bandana_01.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="cartMain.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="list_allProducts01.html" class="blackBtn">START SHOPPING</a></span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="myAccountMain.html">Account</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div class="prodDeContainer">
+        <div>
+            <div>
+                <ul class="detailSlider">
+                    <li><img src="images/prod_collabo_lionKing_01.png" alt="image of the The Lion King: Adjustable Harness 1"></li>
+                    <li><img src="images/prod_collabo_lionKing_01_hover.png" alt="image of the The Lion King: Adjustable Harness 2"></li>
+                    <li><img src="images/prod_collabo_lionKing_01_1.png" alt="image of the The Lion King: Adjustable Harness 3"></li>
+                    <li><img src="images/prod_collabo_lionKing_01_2.png" alt="image of the The Lion King: Adjustable Harness 4"></li>
+                </ul>
+                <ol class="detailPager">
+                    <li><a href="#" data-slide-index="0"><img src="images/prod_collabo_lionKing_01.png" alt="pager 1"></a></li>
+                    <li><a href="#" data-slide-index="1"><img src="images/prod_collabo_lionKing_01_hover.png" alt="pager 2"></a></li>
+                    <li><a href="#" data-slide-index="2"><img src="images/prod_collabo_lionKing_01_1.png" alt="pager 3"></a></li>
+                    <li><a href="#" data-slide-index="3"><img src="images/prod_collabo_lionKing_01_2.png" alt="pager 4"></a></li>
+                </ol>
+            </div>
+            <div>
+                <h2>The Lion King: Adjustable Harness</h2>
+                <span class="star5">star</span><span>5.0</span>
+                <strong class="fontQuick">₩42,000</strong>
+                <form>
+                    <fieldset>
+                        <legend>Size</legend>
+                        <ul>
+                            <li><input type="button" value="XXS" class="whiteBtn active"></li>
+                            <li><input type="button" value="XS" class="whiteBtn"></li>
+                            <li><input type="button" value="S" class="whiteBtn"></li>
+                            <li><input type="button" value="M" class="whiteBtn"></li>
+                            <li><input type="button" value="L" class="whiteBtn"></li>
+                            <li><input type="button" value="XL" class="whiteBtn"></li>
+                        </ul>
+                    </fieldset>
+                    <div>
+                        <span class="numberComponent">
+                            <input type="button" value="minus">
+                            <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                            <input type="button" value="plus">
+                        </span>
+                        <input type="button" data-panel="cartPanel" class="blackBtn" value="ADD TO CART">
+                    </div>
+                </form>
+                <p>
+                    <input type="button" value="afterpay" data-popup="afterpayInfoPopup">
+                    <b>available for orders between $1 - $2,000</b>
+                </p>
+                <p>Pickup available at Pablo & Co. Usually ready in 2-4 days</p>
+                <div id="afterpayInfoPopup">
+                    <input type="button" value="close" class="closeBtn">
+                    <img src="images/ico_afterpayInfo.png" alt="About afterpay">
+                    <ul>
+                        <li><p>Add your favourites to cart</p></li>
+                        <li><p>Select Afterpay at checkout</p></li>
+                        <li><p>Log into or create your Afterpay account, instant approval decision</p></li>
+                        <li><p>Your purchase will be split into 4 payments, payable every 2 weeks</p></li>
+                    </ul>
+                    <p>
+                        Late fees and additional eligibility criteria apply. 
+                        The first payment may be due at the time of purchase.
+                        For complete terms visit afterpay.com/en-AU/terms-of-service
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <h2>Description</h2>
+            <p>Introducing our Disney classics range! Bring back your childhood memories with our adorable range of Disney pet products.</p>
+            <ul>
+                <li>Custom printed neoprene with a breathable mesh lining</li>
+                <li>Quick drying</li>
+                <li>Fully adjustable polyester webbing neck and chest straps</li>
+                <li>Pablo & Co. branded four point lock buckle for ease of mind</li>
+                <li>Back alloy D ring for regular walking</li>
+                <li>Also includes our sturdy front D-Ring for no pull walking (only available on our XXS - M harnesses).</li>
+                <li>Size guide</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>NECK</th>
+                        <th>CHIEST</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>XXS</th>
+                        <td>23cm &#126; 33cm</td>
+                        <td>27cm &#126; 37cm</td>
+                    </tr>
+                    <tr>
+                        <th>XS</th>
+                        <td>27cm &#126; 36cm</td>
+                        <td>36cm &#126; 48cm</td>
+                    </tr>
+                    <tr>
+                        <th>S</th>
+                        <td>35cm &#126; 44cm</td>
+                        <td>41cm &#126; 54cm</td>
+                    </tr>
+                    <tr>
+                        <th>M</th>
+                        <td>39cm &#126; 51cm</td>
+                        <td>46cm &#126; 62cm</td>
+                    </tr>
+                    <tr>
+                        <th>L</th>
+                        <td>42cm &#126; 56cm</td>
+                        <td>57cm &#126; 83cm</td>
+                    </tr>
+                    <tr>
+                        <th>XL</th>
+                        <td>48cm &#126; 63cm</td>
+                        <td>60cm &#126; 89cm</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div>
+            <h2>
+                <span>0</span>Reviews
+                <input type="button" value="Write a review" data-panel="reviewPanel">
+            </h2>
+            <div id="reviewPanel">
+                <form>
+                    <div>
+                        <div class="starRating">
+                            <input type="radio" name="starGroup" class="star" value="1">
+                            <input type="radio" name="starGroup" class="star" value="2">
+                            <input type="radio" name="starGroup" class="star" value="3">
+                            <input type="radio" name="starGroup" class="star" value="4">
+                            <input type="radio" name="starGroup" class="star" value="5">
+                        </div>
+                        <span>
+                            <label for="uploadPhoto">photo</label>
+                            <input type="file" id="uploadPhoto">
+                            <input type="submit" value="Done" class="blackBtn">
+                        </span>
+                    </div>
+                    <textarea maxlength="200" placeholder="Share your experience" title="Share your experience"></textarea>
+                </form>
+            </div>
+            <p>Be the first to write a review</p>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="checkOut.html">
+                <ul>
+                    <li>
+                        <a href="prodDe_acc_bandana_01.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="cartMain.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="list_allProducts01.html" class="blackBtn">START SHOPPING</a></span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="myAccountMain.html">Account</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <section class="careTermsContainer">
+        <h2 class="pageMainTilte">Terms &amp; Conditions</h2>
+        <div class="footerTop">
+            <h3>YOU AGREE TO THE FOLLOWING TERMS &amp; CONDITIONS</h3>
+            <div>
+                <p>By using this website and/or purchasing from this website, you agree to the following terms & conditions</p>
+                <p>Please note discount codes are not valid on collaboration items (such as Disney + Star Wars).</p>
+                <p>You understand that by placing an order with 'final clearance' items, they are not eligible for a return.</p>
+                <p>You understand that a pre order item will be shipped on the date specified on each individual listing.</p>
+                <p>You understand that Australia Post is out of our control and you agree to their shipping terms.</p>
+                <p>
+                    We're only a small business. <b>please allow 1-6+ business days for domestic orders to be dispatched and allow up to 
+                    2-5 business days for international orders to be dispatched.</b> Please allow an additional 5-12 business days for order 
+                    to be dispatched during a sale & new launch period. 
+                </p>
+                <p>
+                    By placing a pre order item/s, your entire order will be shipped when all products become available. (If you urgently 
+                    need a product that is in stock before the pre order item is available, please place two seperate orders). 
+                </p>
+                <p>Please note: For Health and Hygiene reasons we do not accept returns or refunds on any of the following types of products unless they are faulty such as earrings / jewellery etc.</p>
+                <p>
+                    Pablo & Co. is unable to take responsibility for sizing issues. Please carefully read the sizing guide for each specific 
+                    product before placing your order. If in doubt, please email us with your dog's neck and chest measurements before 
+                    purchasing.
+                </p>
+                <p>Please take care to enter the correct address details when you order. If a parcel comes back to us marked 'return to sender' the buyer must pay the same postage fee to get the item re-delivered to them again.</p>
+                <p>Once your order has been placed, unfortunately we do not cancel/refund orders. If you need to make changes to your order, contact us ASAP and we'll see what we can do before your order has been dispatched.</p>
+                <p>You have read our returns & exchange policy and understand we not provide refunds for change of mind</p>
+                <p>
+                    If an item is to be returned and or exchanged, the return shipping cost will be at the customer’s expense and items 
+                    must be unused and in it’s original packaging and condition. Please note, if you mark the return 'Return to sender' 
+                    our Australia Post account will be charged a return fee. This fee will be at the buyers expense. 
+                </p>
+                <p>Price adjustments or partial refunds will not be provided if you have placed an order for a full priced item and the product is on sale the following day/ week etc.</p>
+                <p>
+                    Need to organise a return? <b>You will be provided with a store credit for the amount of the item that you have paid at 
+                    the time of placing the order.</b> (You may be eligible to pay additional costs such as shipping or a higher dollar value if 
+                    the item is back at the original price. (not on sale)).
+                </p>
+                <p>A Pablo & Co. store credit will be emailed to you in the form of a gift card, which you can use to repurchase another item or save your Pablo & Co. store credit for later since it never expires!</p>
+                <p>
+                    When a request is made for a parcel to be delivered and left unattended you acknowledge that Pablo & Co. and 
+                    their Representatives will not be liable in any way for any loss or damage to the parcel, left in accordance with this 
+                    authority.
+                </p>
+            </div>
+        </div>
+        <ul class="footerUl">
+            <li>
+                <h4>INTERNATIONAL ORDERS</h4>
+                <div class="toggleBlock">
+                    <p>
+                        In addition to the Items and delivery charges we apply to your order, you may also be required by your country of 
+                        residence to pay import duties and taxes. We are not responsible for payment of such duties and taxes and in the 
+                        event that you refuse to pay such duties and taxes and the order is returned to us, we will require you to pay any 
+                        costs that we have incurred as a consequence.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h4>OUR GUARANTEE</h4>
+                <div class="toggleBlock">
+                    <p>
+                        Pablo & Co. products are made from high quality and durable materials, however they are not indestructible. We 
+                        guarantee our accessories and pet products at the time of purchase against any defects. If you have experienced a 
+                        problem with any of our products, please send an email to us.
+                    </p>
+                    <p>Please ensure that you inspect all items for wear prior to use. We are unable to take responsibility for any injury or loss caused by the use or misuse of our products.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>

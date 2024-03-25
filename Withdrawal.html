@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="checkOut.html">
+                <ul>
+                    <li>
+                        <a href="prodDe_acc_bandana_01.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="cartMain.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="list_allProducts01.html" class="blackBtn">START SHOPPING</a></span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index_after.html">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="myAccountMain.html">Account</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+    
+    <section class="withdrawalContainer">
+        <h2 class="pageMainTilte">Membership Withdrawal</h2>
+        <p class="accPnthofT">Since you are a member who wishes to cancel your membership, it seems that our shopping mall's services are very lacking and insufficient.</p>
+        <p class="accPLofT">If you let us know of any inconveniences or complaints, we will actively reflect them and try to resolve your inconvenience.</p>
+        <form>
+            <div>
+                <h3>Reason for withdrawal</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason01">
+                        <label for="Reason01">Customer service (consultation, packaging, etc.) complaints</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason02">
+                        <label for="Reason02">Delivery complaints</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason03">
+                        <label for="Reason03">Exchange/Refund/Return Complaints</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason04">
+                        <label for="Reason04">Concerns about personal information leakage</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason05">
+                        <label for="Reason05">Dissatisfaction with product price</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason06">
+                        <label for="Reason06">Dissatisfaction with the reliability of shopping malls</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ReasonWithdrawal" id="Reason07">
+                        <label for="Reason07">Less frequent visits</label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3>A word of advice</h3>
+               <span>
+                    <textarea id="AddNote" placeholder="Please leave your advice" title="Please leave your advice"></textarea>
+               </span>
+            </div>
+            <div>
+                <a href="myAccountMain.html" class="underline_a8">Cancel</a>
+                <input type="button" class="blackBtn" value="SECESSION" data-popup="withdrawaReconfirm">
+            </div>
+        </form>
+        <div id="withdrawaReconfirm">
+            <p>Are you sure you want to withdraw?</p>
+            <input type="button" class="blackBtn closeBtn" value="CANCEL">
+            <a href="index.html" class="whiteBtn">SECESSION</a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>

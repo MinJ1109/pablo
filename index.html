@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pablo&co</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/myjsfile.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body class="indexLock">
+    <div id="searchPanel">
+        <form>
+            <div>
+                <input type="search" placeholder="Search" title="Please enter your search term.">
+                <input type="submit" value="searchIcon">
+            </div>
+        </form>
+        <input type="button" value="close" class="closeBtn">
+    </div>
+    <div id="cartPanel">
+        <input type="button" value="close" class="closeBtn">
+        <div>
+            <h2>Shopping Cart</h2>
+            <form action="sign_in.html">
+                <ul>
+                    <li>
+                        <a href="sign_in.html">
+                            <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        </a>
+                        <div>
+                            <dl>
+                                <dt>
+                                    In Bloom - Dog Bandana
+                                    <small>M</small>
+                                </dt>
+                                <dd class="fontQuick">
+                                    ₩<strong class="fontQuick countPrice">20,000</strong>
+                                </dd>
+                            </dl>
+                            <span class="numberComponent">
+                                <input type="button" value="minus">
+                                <input type="number" class="fontQuick prodQty" value="1" min="1" max="99" readonly>
+                                <input type="button" value="plus">
+                            </span>
+                            <input type="button" value="deleteBtn" class="removeBtn">
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <b>Subtotal:</b>
+                    <span class="fontQuick">
+                        ₩<strong class="fontQuick" id="totalPrice">20,000</strong>
+                    </span>
+                    <div>
+                        <a href="sign_in.html" class="whiteBtn">VIEW CART</a>
+                        <input type="submit" value="CHECK OUT" class="blackBtn">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Your cart is empty
+                <a href="sign_in.html" class="blackBtn">START SHOPPING</a>
+            </span>
+        </div>
+    </div>
+    <header>
+        <div>
+            <input type="button" value="menuIcon" data-panel="mobileNavPanel">
+            <input type="button" value="Search" data-panel="searchPanel">
+            <h1>
+                <a href="index.html" class="jsNone">
+                    <img src="images/logo.png" alt="welcome to pablo&co!">
+                </a>
+            </h1>
+            <span>
+                <a href="sign_In.html">Sign in</a>
+                <input type="button" value="Cart" data-panel="cartPanel">
+            </span>
+        </div>
+        <nav id="mobileNavPanel">
+            <input type="button" value="close" class="closeBtn">
+            <ul>
+                <li><a href="list_allProducts01.html">All Products</a></li>
+                <li><a href="list_walkies01.html">Walkies</a></li>
+                <li><a href="list_accessories01.html">Accessories</a></li>
+                <li><a href="list_travel01.html">Travel</a></li>
+                <li><a href="list_wear01.html">Wear</a></li>
+                <li><a href="list_collaborations01.html">Collaborations</a></li>
+                <li><a href="list_puptorium01.html">Puptorium</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div class="mainContainer">
+        <ul class="mainSlider">
+            <li class="mainS01">
+                <figure>
+                    <img src="images/bg_silde_01.png" alt="Image of pawty mix lollies with a sitting puppy">
+                    <figcaption>
+                        <dl>
+                            <dt>Pawty Mix Lollies</dt>
+                            <dd>
+                                Lollies for dogs! No, you haven't gone mad!
+                                These are delicious, retro inspired fun lovin' treats for your fur baby!
+                                Our treats come in a 100&percnt; Australian Made
+                                and printed bag, an industry first!
+                            </dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="mainS02">
+                <img src="images/bg_silde_02.png" alt="Image of a dog drinking water from a bottle">
+                <div>
+                    <h2>
+                        <small>Classic Travel</small>
+                        Water Bottle
+                    </h2>
+                    <figure>
+                        <img src="images/silde02_bottle.png" alt="Image of a bottles">
+                        <figcaption>
+                            <dl>
+                                <dt>Water bottles in 7 colors</dt>
+                                <dd>In that order: pink, green, purple, blue, red, gray, light blue.</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+            </li>
+            <li class="mainS03">
+                <img src="images/bg_silde_03.png" alt="Image of Gut + Immunity Supplement with a sitting puppy">
+                <div>
+                    <h2>Gut + Immunity Supplement</h2>
+                    <p>Pet Drs Gut &plus; Immunity is a 100% natural supplement formulated to help optimise intestinal health</p>
+                    <figure>
+                        <img src="images/slide03_table.png" alt="Image of dosage and administration">
+                        <figcaption>
+                            <dl>
+                                <dt>cat&lpar;1&tilde;8kg&rpar; or toy dog&lpar;1&tilde;5kg&rpar;</dt>
+                                <dd>&frac12; TSP DAILY</dd>
+                            </dl>
+                            <dl>
+                                <dt>small dog&lpar;5&tilde;20kg&rpar;</dt>
+                                <dd>1 TSP DAILY</dd>
+                            </dl>
+                            <dl>
+                                <dt>medium dog&lpar;20&tilde;40kg&rpar;</dt>
+                                <dd>2 TSP DAILY</dd>
+                            </dl>
+                            <dl>
+                                <dt>large dog&lpar;40&plus;kg&rpar;</dt>
+                                <dd>3 TSP DAILY</dd>
+                            </dl>
+                        </figcaption>
+                    </figure>
+                </div>
+            </li>
+        </ul>
+        <ul class="tickerSlider">
+            <li><img src="images/seen_01.png" alt="Frankie logo"></li>
+            <li><img src="images/seen_02.png" alt="Herald Sun logo"></li>
+            <li><img src="images/seen_03.png" alt="Weekend Edition logo"></li>
+            <li><img src="images/seen_04.png" alt="Noba logo"></li>
+            <li><img src="images/seen_05.png" alt="Pedestrian logo"></li>
+            <li><img src="images/seen_06.png" alt="Network Ten logo"></li>
+            <li><img src="images/seen_07.png" alt="CourierMail logo"></li>
+        </ul>
+        <div class="shopSlider">
+            <div class="control">
+                <span class="prevControls"></span>
+                <h2>
+                    SHOP NEW
+                </h2>    
+                <span class="nextControls"></span>
+            </div> 
+            <a href="list_allProducts01.html">VIEW ALL</a>
+            <ul class="newProdSlider">
+                <li>
+                    <div>
+                        <img src="images/prod_wear_dogOnesies_03.png" alt="Image of Dog wearing a 'Lilac Smiley Flowers: Onesie'">
+                        <a href="prodDe_wear_dogOnesies_03.html" class="whiteBtn">QUICK BUY</a>
+                    </div>
+                    <dl>
+                        <dt>Lilac Smiley Flowers: Onesie</dt>
+                        <dd class="fontQuick">
+                            ₩<strong class="fontQuick">38,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_acc_bandana_03.png" alt="Image of Dog wearing a 'Espresso Swirls - Dog Bandana'">
+                        <a href="prodDe_acc_bandana_03.html" class="whiteBtn">QUICK BUY</a>
+                    </div>
+                    <dl>
+                        <dt>Espresso Swirls - Dog Bandana</dt>
+                        <dd class="fontQuick">
+                            ₩<strong class="fontQuick">20,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_acc_bandana_01.png" alt="Image of Dog wearing a 'In Bloom - Dog Bandana'">
+                        <a href="prodDe_acc_bandana_01.html" class="whiteBtn">QUICK BUY</a>
+                    </div>
+                    <dl>
+                        <dt>In Bloom - Dog Bandana</dt>
+                        <dd class="fontQuick">
+                            ₩<strong class="fontQuick">20,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_walkies_harness_01.png" alt="Image of Dog wearing a 'Dog Strap Harness: Khaki Leopard'">
+                        <a href="prodDe_walkies_harness_01.html" class="whiteBtn">QUICK BUY</a>
+                    </div>
+                    <dl>
+                        <dt>Dog Strap Harness: Khaki Leopard</dt>
+                        <dd class="fontQuick">
+                            ₩<strong class="fontQuick">24,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/prod_wear_dogOnesies_01.png" alt="Image of Dog wearing a 'Moo Moo: Onesie'">
+                        <a href="prodDe_wear_dogOnesies_01.html" class="whiteBtn">QUICK BUY</a>
+                    </div>
+                    <dl>
+                        <dt>Moo Moo: Onesie</dt>
+                        <dd class="fontQuick">
+                            ₩<strong class="fontQuick">38,000</strong>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="fontQuick">Worldwide Shipping Available!</h2>
+            <p>FREE SHIPPING ON ALL ORDERS OVER $150AUD</p>
+            <p>Our products are designed in Australia and ready to be shipped around the world!</p>
+        </div>
+        <div class="collectSlider">
+            <div class="control">
+                <span class="prevControls"></span>
+                <h2>
+                    SHOP BY COLLECTION
+                </h2>
+                <span class="nextControls"></span>
+            </div>
+            <a href="list_allProducts01.html">VIEW ALL</a>
+            <ul class="collSlider1">
+                <li>
+                    <a href="list_walkies01.html">
+                        <img src="images/collect_01.png" alt="Image of Various poop bag holders">
+                        <span>POOP BAG HOLDERS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_puptorium01.html">
+                        <img src="images/collect_02.png" alt="Image of dog wipes">
+                        <span>GROOMING &amp; ESSENTIALS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_walkies01.html">
+                        <img src="images/collect_03.png" alt="Image of Various leashes">
+                        <span>LEASHES</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_accessories01.html">
+                        <img src="images/collect_04.png" alt="Image of three PABLO'S PAWTY HATS">
+                        <span>PABLO’S PAWTY HATS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_accessories01.html">
+                        <img src="images/collect_05.png" alt="Images of Various DOO DOO HOLDERS">
+                        <span>DOO DOO HOLDERS</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="collaboSlider">
+            <div class="control">
+                <span class="prevControls"></span>
+                <h2>
+                    PABLO &amp; CO. x COLLABORATIONS
+                </h2>
+                <span class="nextControls"></span>
+            </div>
+            <a href="list_collaborations01.html">VIEW ALL</a>
+            <ul class="collSlider2">
+                <li>
+                    <a href="list_collaborations01.html">
+                        <img src="images/collabo_01.png" alt="Image of a dog wearing a '101 Dalmatians: Adjustable Harness'">
+                        <span>101Dalmatians</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_collaborations01.html">
+                        <img src="images/collabo_02.png" alt="Image of a dog wearing a 'Alice in Wonderland: Adjustable Harness'">
+                        <span>Alice in Wonderland</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_collaborations01.html">
+                        <img src="images/collabo_03.png" alt="Image of a dog wearing a 'Bambi & Butterflies: Adjustable Harness'">
+                        <span>Bambi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_collaborations01.html">
+                        <img src="images/collabo_04.png" alt="Image of a dog wearing a 'Disney Princesses: Adjustable Harness'">
+                        <span>Disney Princesses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="list_collaborations01.html">
+                        <img src="images/collabo_05.png" alt="Image of a dog wearing a 'Dr. Seuss' The Grinch: Adjustable Harness'">
+                        <span>Dr. Seuss' The Grinch</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div>
+                <small>OUR STORY</small>
+                <h2>                    
+                    Hey! I'm Loren the side kick to Pablo, the CEO of Pablo &amp; Co.
+                </h2>
+                <p>For those of you who have been living under a rock, Pablo is a long haired Black &amp; Tan miniature dachshund with a sassy attitude to match his heart-breaking looks.</p>
+                <p>Established in late 2016, Pablo &amp; Co. have been providing the coolest fashion statements for all our furry friends!</p>
+                <p>We are an Australian based business selling a range of fun pet accessories to spoil your special furry companion with.</p>
+                <p>We love what we do so we hope you do, too.</p>
+                <cite>Puppy kisses, Loren &amp; Pablo x</cite>
+                <a href="care_aboutUs.html" class="blackBtn">READ MORE ABOUT US</a>
+            </div>
+            <img src="images/ourStory.png" alt="Image of long haired Black and Tan miniature dachshund">
+        </div>
+        <div>
+            <h2>NEWSLETTER</h2>
+            <p>Subscribe to be the first to hear about our exclusive offers and latest arrivals...</p>
+            <form>
+                <input type="email" placeholder="Enter email" class="reValue" title="Enter your email">
+                <input type="button" value="SIGN UP" class="blackBtn" data-popup="emailSendPopup">
+            </form>
+            <div id="emailSendPopup">
+                <span>Thanks for subscribing!</span>
+                <input type="button" value="CLOSE" class=" closeBtn blackBtn">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h2>GET IN TOUCH</h2>
+            <p>We are here to help you! If you have any questions you can contact us via email and we'll get back to you ASAP!</p>
+            <a href="mailto:sales@pabloandco.net">sales@pabloandco.net</a>
+            <ul>
+                <li><a href="https://www.facebook.com/pabloandcoboutique" target="_blank">facebook</a></li>
+                <li><a href="https://www.instagram.com/pablo.and.co/shopify" target="_blank">instagram</a></li>
+                <li><a href="https://www.pinterest.com.au/PabloandCoBoutique/shopify" target="_blank">pinterest</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFO</h2>
+            <ul>
+                <li><a href="info_shipping.html">Shipping</a></li>
+                <li><a href="info_returnsPolicy.html">Returns Policy</a></li>
+                <li><a href="info_bookReturn.html">Book a Return</a></li>
+                <li><a href="info_giftCards.html">Gift Cards</a></li>
+                <li><a href="info_stockists.html">Stockists</a></li>
+                <li><a href="info_privacyPolicy.html">Privacy Policy</a></li>
+                <li><a href="info_termsOfService.html">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="care_OurStore.html">Our Store</a></li>
+                <li><a href="care_aboutUs.html">About Us</a></li>
+                <li><a href="care_inquiry.html">Contact Us</a></li>
+                <li><a href="care_wholesale.html">Wholesale</a></li>
+                <li><a href="care_TermsConditions.html">Terms &amp; Conditions</a></li>
+            </ul>
+        </div>
+        <p>
+            &#169; 2023 Pablo &amp; Co. Boutique.
+        </p>
+    </footer>
+</body>
+</html>

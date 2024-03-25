@@ -1,0 +1,2413 @@
+.fontQuick{
+    font-family: 'Quicksand';
+}
+body *:not(.fontQuick){
+    font-family: 'Poppins';
+}
+
+input{
+    border: none; box-shadow: none; appearance: none; font-family: inherit; 
+    -webkit-appearance: none; -moz-appearance: none; 
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{-webkit-appearance: none;}
+input[type='button'],input[type='submit']{cursor: pointer;}
+input[type="date"]{position: relative;}
+input[type="date"]::-webkit-calendar-picker-indicator {position: absolute; width: 100%; height: 100%; opacity: 0;}
+
+[id$='Panel']{z-index: 100;}
+[id$='Popup']{z-index: 200;}
+
+.mainContainer .bx-wrapper,
+.prodDeContainer .bx-wrapper{
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    margin: 0 auto; 
+}
+select{
+    -o-appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    appearance: none; background-color: transparent; border: none;
+}
+select::-ms-expand{
+    display: none;
+}
+/* * * */
+#searchPanel, #cartPanel, .numberComponent,
+#cartPanel > div:first-of-type form ul li a,
+#cartPanel > div:first-of-type form > div,
+header div, header nav,
+.mainContainer .shopSlider ul li div,
+.mainContainer .collectSlider ul li a img,
+.mainContainer .collaboSlider ul li a img,
+.listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div div,
+.listContainer div:nth-of-type(2) > ul li div,
+.prodDeContainer > div:first-child,
+.prodDeContainer > div:first-child > div:first-child ol li,
+.prodDeContainer .bx-wrapper:first-child .bx-next,
+.prodDeContainer .bx-wrapper:first-child .bx-prev,
+.prodDeContainer > div:first-child > div:last-child strong,
+.prodDeContainer section,
+.prodDeContainer section table,
+.prodDeContainer section table th, .prodDeContainer section table td,
+.prodDeContainer > div:last-child #reviewPanel,
+[for^="uploadPhoto"],
+.prodDeContainer > div:last-child #reviewPanel form textarea,
+.inputEnterBox, .inputEnterBoxPay,
+.payStep01Container form > div > div:first-child > div fieldset:first-of-type,
+.payStep01Container form > div > div:first-child > div fieldset:last-of-type span:has(select),
+.payStep02Container form > div > div:first-child > div > ul,
+.payStep02Container form > div > div:first-child > div > ul li:not(:last-child),
+.payStep03Container form > div > div:first-child > div > ul,
+.payStep03Container form > div > div:first-child > div > ul li:not(:last-child),
+.payStep02Container form > div > div:first-child > div fieldset ul,
+.payStep02Container form > div > div:first-child > div fieldset ul li:first-of-type,
+.payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li div,
+.payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li > div:first-of-type,
+.payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li:last-of-type > #newAddrOpen,
+.payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li:last-of-type > #newAddrOpen span,
+div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li img,
+.cartDeContainer form ul,
+.cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child a,
+.cartDeContainer form > div div:first-child textarea,
+[class^='account'] > .accountList,
+.accountMainContainer div:last-of-type,
+.accountMainContainer div:last-of-type img,
+.accountMainContainer > ul,
+.withdrawalContainer form div:not(:last-of-type),
+.withdrawalContainer form div:not(:last-of-type) h3,
+.withdrawalContainer form div:nth-of-type(2) span textarea,
+.editProfileContainer form  span:first-child img,
+.accountHistoryContainer div:nth-of-type(2) form > span input:not([type="button"]),
+.accountHistoryContainer > ul,
+.accountHistoryContainer > ul li:not(:first-child) span:first-child > a,
+.orderDeContainer div:first-of-type,
+.orderDeContainer div:first-of-type table tbody tr:not(:last-child),
+.orderDeContainer div:first-of-type table tbody tr th,
+.orderDeContainer div:last-of-type p,
+[class='titleLi'],
+.accountAddrsContainer form ul,
+.accountAddrsAftContainer form ul,
+.newAddrsContainer div form div:nth-of-type(2) span,
+.accountQnAContainer > ul,
+.accountQnABeContainer > ul,
+.sendInquiryContainer form div:first-child span:first-of-type,
+.sendInquiryContainer form div:first-child span:last-of-type textarea,
+.qnaDeContainer > div div:first-of-type,
+.qnaDeContainer > div div table tbody tr:not(:last-child),
+.qnaDeContainer > div div table tbody tr th,
+.accountRevContainer > ul,
+.accountRevAftContainer > ul,
+.accountRevContainer > ul li:not(:first-child) span:first-child a,
+.accountRevAftContainer > ul li:not(:first-child) span:first-child a,
+.writeRevContainer form > div:first-child span textarea,
+[class='footerUl'] li, [class='footerTop'] div,
+.returnContainer form > div:first-child textarea,
+.StockistsContainer > div:last-of-type iframe,
+.StockistsContainer > div:first-of-type ul li,
+.careOurStContainer div,
+.careAboutContainer > div div,
+.pager,footer{
+    border-color: #cfcfcf; border-style: solid;
+}
+/* * border */
+.closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input),
+#searchPanel form div input[type="submit"],
+.numberComponent input:not(input[type='number']),
+#cartPanel > div:first-of-type form ul li div > input,
+.pager span a{
+    text-indent: -9999px; background-repeat: no-repeat; background-color: transparent;
+}
+.whiteBtn{
+    box-sizing: border-box; text-align: center; font-weight: 500; color: #242424; 
+    background-color: #fff;  border: 1px solid #cfcfcf; border-radius: 5px; 
+}
+.whiteBtn:hover, .whiteBtn.active{
+    background-color: #ff4a81; border-color: #ff4a81; color: #fff; 
+}
+.blackBtn{
+    box-sizing: border-box; text-align: center; font-weight: 500; color: #fff;
+    background-color: #000; border-radius: 5px; 
+}
+.blackBtn:hover{
+    background-color: #ff4a81;
+}
+input[type="checkbox"]{
+    background: url("../images/btn_checkOut.svg") center no-repeat;
+}
+input[type="checkbox"]:checked{
+    background: url("../images/btn_checkOn.svg") center no-repeat;
+}
+input[type="radio"]:not(.star){
+    background: url("../images/btn_radioOff.svg") center no-repeat;
+}
+input[type="radio"]:not(.star):checked{
+    background: url("../images/btn_radioOn.svg") center no-repeat;
+}
+/* * button */
+
+@media screen and (max-width: 767px){
+    .whiteBtn, .blackBtn, select,
+    #cartPanel > div:first-of-type form ul li div dl dt small,
+    header div *,
+    .prodDeContainer > div:first-child > div:last-child > p,
+    .inputEnterBox, .inputEnterBoxPay, .underline_a8,
+    .payStep01Container form > div > div:first-child > div fieldset:last-of-type div:last-of-type p,
+    .payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li:last-of-type > #newAddrOpen > div p,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:nth-child(2) > input,
+    .cartDeContainer form > div div:first-child textarea,
+    .withdrawalContainer form div:first-of-type ul li label,
+    .withdrawalContainer form div:nth-of-type(2) span textarea,
+    .accountHistoryContainer div:nth-of-type(2) form > span *:not(:last-child),
+    .sendInquiryContainer form div:first-child span:last-of-type textarea,
+    .writeRevContainer form > div:first-child span textarea,
+    .returnContainer form > div:first-child textarea,
+    .StockistsContainer > div:first-of-type ul li address p{
+        font-size: 12px;
+    }
+    #searchPanel form div input[type="search"],
+    #cartPanel > div:first-of-type form ul li div dl dd,
+    .numberComponent input[type='number'],
+    .mainContainer .shopSlider ul li dl dd,
+    .mainContainer .collaboSlider + div div small,
+    .mainContainer .collaboSlider + div p,
+    .mainContainer .collaboSlider + div cite,
+    .mainContainer > div:last-child form input[type="email"],
+    .listContainer div:nth-of-type(2) aside > div ul > li:first-of-type label,
+    .listContainer div:nth-of-type(2) aside > div ul > li h4,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div input,
+    .listContainer div:nth-of-type(2) > ul li dl dd,
+    .prodDeContainer > div:first-child > div:last-child > span:last-of-type,
+    .prodDeContainer > div:first-child > div:last-child #afterpayInfoPopup p,
+    .prodDeContainer section table td,
+    .prodDeContainer > div:last-child h2 input,
+    .prodDeContainer > div:last-child #reviewPanel form textarea,
+    .titleLabel, .rePasswordContainer p, .rePasswordAfterContainer p,
+    .payCompContainer div span,
+    .payStep01Container form > div > div:first-child > div fieldset:first-of-type legend,
+    .payStep01Container form > div > div:first-child > div > div,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(2) span label,
+    .payStep02Container form > div > div:first-child > div > ul li span:last-child,
+    .payStep03Container form > div > div:first-child > div > ul li span:last-child,
+    .payStep02Container form > div > div:first-child > div fieldset ul li label,
+    .payStep02Container form > div > div:first-child > div fieldset ul li strong,
+    .payStep03Container form > div > div:first-child > div fieldset legend + p,
+    .payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li div:first-of-type label,
+    .payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li:last-of-type #afterPayOpen p,
+    .payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li div:first-of-type label,
+    .payStep03Container form > div > div:first-child > div > span label,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dt *,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dd,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:not(:last-of-type) strong,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child span b,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:last-of-type,
+    .cartDeContainer form > div div:last-child p,
+    .accountMainContainer > ul li span:last-child,
+    .accPnthofT, .accPLofT,
+    .editProfileContainer form div:first-of-type label,
+    .editProfileContainer form div:first-of-type h3,
+    .editProfileContainer form div:nth-of-type(2) span,
+    .editProfileContainer form div:nth-of-type(3) span,
+    .accountHistoryContainer > ul li:not(:first-child) span:first-child > span b,
+    .accountHistoryContainer > ul li:not(:first-child) span:nth-child(2),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(3),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(4),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(5),
+    .orderDeContainer div:first-of-type table tbody tr td,
+    .orderDeContainer div:last-of-type p,
+    .newAddrsContainer div form > span label,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(2),
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(5),
+    .qnaDeContainer > div div table tbody tr td,
+    .accountRevContainer > ul li:not(:first-child) > span:first-child span b,
+    .accountRevContainer > ul li:not(:first-child) > span:not(:first-child),
+    .accountRevContainer > ul li:not(:first-child) > span:not(:first-child) *:not(a),
+    .accountRevAftContainer > ul li:not(:first-child) > span:first-child span b,
+    .accountRevAftContainer > ul li:not(:first-child) > span:not(:first-child),
+    .accountRevAftContainer > ul li:not(:first-child) > span:not(:first-child) *:not(a),
+    .writeRevContainer form > div:first-child p, [class='footerTop'] div p,
+    [class='footerUl'] li div p,
+    .returnContainer form > div:last-child p,
+    .returnContainer form > div:last-child span,
+    .returnAftContainer span,
+    .careOurStContainer div p,
+    .careAboutContainer > div div p,
+    .careWholeContainer > div:last-of-type div p,
+    footer > p{
+        font-size: 13px;        
+    }
+    .mainContainer .shopSlider > a,
+    .mainContainer .collectSlider > a,
+    .mainContainer .collaboSlider > a,
+    .listContainer > div:first-of-type *,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(3) ol li label,
+    .listContainer div:nth-of-type(2) > ul li dl dt,
+    .prodDeContainer > div:first-child > div:last-child  form fieldset legend,
+    div[class^="payStep"] form > div > div:first-child > div ol li,
+    .payStep02Container form > div > div:first-child > div > ul li span:first-child,
+    .payStep03Container form > div > div:first-child > div > ul li span:first-child,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:not(:last-of-type),
+    [class^='account'] > .accountList ul li a,
+    .accountMainContainer div:last-of-type > span,
+    .orderDeContainer div:first-of-type table tbody tr th,
+    .orderDeContainer div:last-of-type h3,
+    [class='titleLi'],
+    .accountAddrsContainer form ul li:not(:first-child) > span:not(:last-child),
+    .accountQnAContainer > ul li:not(:first-child) > span:first-child,
+    .qnaDeContainer > div div table tbody tr th,
+    .StockistsContainer > div:first-of-type ul li address h3,
+    .listContainer > div:nth-of-type(2) aside h3,
+    div[class^="payStep"] form > div > div:last-child > div:first-of-type h2,
+    footer div{
+        font-size: 14px;
+    }
+    header nav ul li a,
+    #cartPanel > div:first-of-type form ul li div dl dt,
+    .mainContainer .mainSlider .mainS01 figure figcaption dl dd,
+    .mainContainer .shopSlider ul li dl dt,
+    .mainContainer .collectSlider ul li a span,
+    .mainContainer .collaboSlider ul li a span,
+    .mainContainer > div:last-child p,
+    .prodDeContainer section p,
+    .prodDeContainer section ul li,
+    .prodDeContainer section table th,
+    .prodDeContainer > div:last-child p,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dt,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child span,
+    .cartDeContainer form ul li:last-child h3,
+    .withdrawalContainer form div:not(:last-of-type) h3,
+    .accountHistoryContainer > ul li:not(:first-child) span:first-child > span,
+    .accountAddrsAftContainer form ul li:last-child h3,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(3) a,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(4),
+    .accountQnABeContainer > ul li:last-child h3,
+    .accountRevContainer > ul li:not(:first-child) > span:first-child span,
+    .accountRevAftContainer > ul li:not(:first-child) > span:first-child span,
+    [class='footerTop'] h3, [class='footerUl'] li h4,
+    .careAboutContainer > div h3,
+    .pager ol li a{
+        font-size: 16px;
+    }
+    .mainContainer .mainSlider .mainS03 div p,
+    .mainContainer .shopSlider + div p:last-of-type,
+    .mainContainer > div:last-child #emailSendPopup span,
+    .prodDeContainer section h2,
+    .prodDeContainer > div:last-child h2,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(2) legend,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(3) legend,
+    .payStep02Container form > div > div:first-child > div fieldset legend,
+    .payStep03Container form > div > div:first-child > div fieldset legend,
+    .accountMainContainer h2:last-of-type,
+    .accountAddrsContainer #deleteAlert p,
+    .withdrawalContainer #withdrawaReconfirm p,
+    .changePWContainer #changePwOK h3,
+    .careWholeContainer > div:last-of-type div h3{
+        font-size: 16px;
+    }
+    #cartPanel div:first-of-type h2,
+    #cartPanel > div:first-of-type form > div b,
+    #cartPanel > div:first-of-type form > div span,
+    .mainContainer .shopSlider h2, 
+    .mainContainer .collectSlider h2, 
+    .mainContainer .collaboSlider h2,
+    .mainContainer .shopSlider + div p:first-of-type,
+    .mainContainer .collaboSlider + div div h2,
+    .mainContainer > div:last-child h2,
+    .listContainer h2,
+    .prodDeContainer > div:first-child > div:last-child h2,
+    .prodDeContainer > div:first-child > div:last-child strong,
+    .pageMainTilte,
+    .payCompContainer div p,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:last-of-type,
+    .cartDeContainer form > div div:last-child b,
+    .cartDeContainer form > div div:last-child span,
+    .returnAftContainer p,
+    div[class^="payStep"] form > div > div:last-child > div:first-of-type > span{
+        font-size: 22px;
+    }
+    #cartPanel > div:last-of-type span,
+    .accountMainContainer div:last-of-type h3{
+        font-size: 27px;
+    }
+    .mainContainer .mainSlider .mainS02 div h2 small{
+        font-size: 21px;
+    }
+    .mainContainer .mainSlider .mainS01 figure figcaption dl dt,
+    .mainContainer .mainSlider .mainS03 div h2,
+    .mainContainer .shopSlider + div h2,
+    .payCompContainer div h2{
+        font-size: 30px;
+    }
+    .mainContainer .mainSlider .mainS02 div h2,
+    .accountMainContainer > ul li span:first-child{
+        font-size: 32px;
+    }
+    /* * font */
+    .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input){
+        background-image: url('../images/ico_close.svg');
+        width: 20px; height: 20px;
+    }
+    .blackBtn{
+        min-height: 40px;
+    }
+    .whiteBtn, .blackBtn{
+        line-height: 38px;
+    }
+    .prevControls > a{
+        display: inline-block; text-indent: -9999px; width: 20px;
+        background: url('../images/btn_arrowL.svg') right center / 9px 16px no-repeat; 
+    }
+    .nextControls > a{
+        display: inline-block; text-indent: -9999px; width: 20px;
+        background: url('../images/btn_arrowR.svg') left center / 9px 16px no-repeat;
+    }
+    input[type="checkbox"]{
+        width: 20px; height: 20px;
+    }
+    input[type="radio"]:not(.star){
+        width: 20px; height: 20px;
+    }
+    /* * button */
+    .numberComponent{
+        text-align: center; background-color: #fff; 
+        border-width: 1px; border-radius: 5px; box-sizing: border-box;
+    }
+    .numberComponent::after{
+        content: ''; display: block; clear: both;
+    }
+    .numberComponent input{
+        float: left; width: 33.33%; line-height: 40px;
+    }
+    .numberComponent input[type='number']{
+        text-align: center; font-weight: 600; color: #757575; padding: 0;
+    }
+    .numberComponent input:not(input[type='number']){
+        padding: 0; background-size: 16px 16px;
+    }
+    .numberComponent input:first-child{
+        background: url('../images/btn_minus.svg');
+        background-position: left 15px center;
+    }
+    .numberComponent input:last-child{
+        background-image: url('../images/btn_plus.svg');
+        background-position: right 15px center;
+    }
+    /* * number component */
+    header div, header nav,
+    .mainContainer .collaboSlider + div, .listContainer > *:not(.pager),
+    .prodDeContainer, .cartDeContainer,
+    [class^='account'], .withdrawalContainer,
+    .orderDeContainer, .accountAddrsContainer,
+    .newAddrsContainer, .accountQnAContainer,
+    .sendInquiryContainer, .qnaDeContainer,
+    .accountRevContainer, .accountRevAftContainer
+    .writeRevContainer, [class^='info'],
+    .returnContainer, .returnAftContainer,
+    .StockistsContainer, .careOurStContainer,
+    .careAboutContainer, .careTermsContainer,
+    .careWholeContainer, footer{
+        padding-right: 10px; padding-left: 10px;
+    }
+    header + [class$='Container']{
+        padding-top: 70px;
+    }
+    .mainContainer .collaboSlider + div,
+    .listContainer, .prodDeContainer,
+    .signInContainer{
+        max-width: 767px;
+    }
+    .prodDeContainer, .signInContainer,
+    .rePasswordContainer, .rePasswordAfterContainer,
+    .createAccContainer, .cartDeContainer,
+    [class^='account'], .withdrawalContainer,
+    .editProfileContainer, .changePWContainer,
+    .orderDeContainer, .accountAddrsContainer,
+    .newAddrsContainer, .accountQnAContainer,
+    .sendInquiryContainer, .qnaDeContainer,
+    .accountRevContainer, .accountRevAftContainer,
+    .writeRevContainer, [class^='info'],
+    .returnAftContainer, .returnContainer,
+    .StockistsContainer, .careOurStContainer,
+    .careAboutContainer, .careTermsContainer,
+    .careWholeContainer{
+        max-width: 767px; margin: 0 auto 60px;
+    }
+    .signInContainer form div,
+    .rePasswordContainer > div:first-of-type form div,
+    .createAccContainer form div,
+    .editProfileContainer form div,
+    .changePWContainer form div,
+    .writeRevContainer form > div,
+    .returnContainer form > div{
+        margin: 0 auto; text-align: center; padding: 0 10px; box-sizing: border-box;
+    }
+    /* * */
+    .pageMainTilte{
+        font-weight: 600; color: #000; text-align: center; padding: 50px 10px 40px; line-height: 24px;
+    }
+    .titleLabel{
+        font-weight: 500; color: #242424; display: block; text-align: left; margin-bottom: 10px;
+    }
+    .inputEnterBox,
+    .inputEnterBoxPay{
+        font-weight: 500; color: #757575; border-width: 1px; border-radius: 5px;
+        display: block; line-height: 38px; padding: 0 0 0 15px; box-sizing: border-box; width: 100%;
+    }
+    .inputEnterBox::placeholder,
+    .inputEnterBoxPay::placeholder{
+        color: #cfcfcf;
+    }
+    .inputEnterBox:not(:last-of-type),
+    .editProfileContainer form div:first-of-type,
+    .editProfileContainer form div:first-of-type span,
+    .editProfileContainer form div:first-of-type a{
+        margin-bottom: 20px;
+    }
+    .inputEnterBox:last-of-type:not(.newAddrsContainer div form div:nth-of-type(1) input[id="addrLine2"]){
+        margin-bottom: 25px;
+    }
+    .underline_a8:not(.StockistsContainer > div:first-of-type ul li address a){
+        font-weight: 500; color: #fff; background-color: #cfcfcf; 
+        line-height: 30px; padding: 0 10px; border-radius: 5px; text-decoration: none;
+    }
+    .underline_a8:hover{
+        background-color: #ff4a81;
+    }
+    /* * */
+    [class^='account'] > .accountList{
+        border-width: 1px; padding: 0 15px; border-radius: 5px; box-sizing: border-box;
+        margin-bottom: 85px; width: 100%; height: 50px; overflow-x: scroll;
+    }
+    [class^='account'] > .accountList ul{
+        min-width: 418.1px; display: flex;
+    }
+    [class^='account'] > .accountList ul::after{
+        content: ''; display: block; clear: both;
+    }
+    [class^='account'] > .accountList ul li{
+        list-style: none; display: block; line-height: 48px;
+    }
+    [class^='account'] > .accountList ul li:not(:first-of-type){
+        margin-left: 3%;
+    }
+    [class^='account'] > .accountList ul li a{
+        display: block; box-sizing: border-box;
+        font-weight: 500; color: #242424; text-decoration: none;
+    }
+    [class^='account'] > .accountList ul li a.active{
+        color: #ff4a81;
+    }
+    [class^='account'] > .accountList > a{
+        position: absolute; top: 245px; left: 50%; transform: translate(-50%, 0); line-height: 30px;
+    }
+    [for^="uploadPhoto"]{
+        display: inline-block; text-indent: -9999px; width: 40px; height: 40px; vertical-align: middle; cursor: pointer;
+        background: url('../images/ico_photo.png') center / 20px no-repeat; border-width: 1px; border-radius: 5px; box-sizing: border-box;
+    }
+    [id^='uploadPhoto']{
+        display: none;
+    }
+    /* * */
+    [class^='accP']{
+        text-align: center; font-weight: 500; color: #494949; line-height: 16px;
+    }
+    p.accPnthofT{
+        margin-bottom: 10px;
+    }
+    p.accPLofT{
+        margin-bottom: 40px;
+    }
+    /* * */
+    [class='titleLi']{
+        font-weight: 500; color: #242424; border-width: 1px 0; padding: 20px 0; display: flex;
+        box-sizing: border-box; text-align: center; line-height: 23px; min-height: 60px;
+    }
+    [class='titleLi'] > span{
+        align-self: center;
+    }
+    /* * */
+    [class='footerTop'], [class='footerUl']{
+        max-width: 1210px; margin: 0 auto;
+    }
+    [class='footerTop'] h3, [class='footerUl'] li h4, .careAboutContainer > div h3{
+        font-weight: 500; color: #ff92b3; line-height: 19px;
+    }
+    [class='footerTop']{
+        margin-bottom: 40px;
+    }
+    [class='footerTop'] h3,
+    .careAboutContainer > div h3{
+        padding-bottom: 15px;
+    }
+    [class='footerTop'] div,
+    .careAboutContainer > div div{
+        border-width: 1px; border-radius: 5px; padding: 30px 15px; box-sizing: border-box;
+    }
+    [class='footerTop'] div p,
+    .careAboutContainer > div div p{
+        font-weight: 500; color: #757575; line-height: 20px;
+    }
+    [class='footerTop'] div p:not(:last-of-type),
+    .careAboutContainer > div div p:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+    [class='footerTop'] div a{
+        color: #ff4a81;
+    }
+    
+    .infoShipContainer [class='footerTop'] > div,
+    .info02Container [class='footerTop'] > div,
+    .careTermsContainer [class='footerTop'] > div{
+        max-height: 300px; overflow-y: scroll;
+    }
+
+    [class='footerUl']{
+        list-style: none;
+    }
+    [class='footerUl'] li{
+        border-width: 0 0 1px;
+    }
+    [class='footerUl'] li:not(:last-of-type){
+        margin-bottom: 40px;
+    }
+    [class='footerUl'] li h4{
+        padding-bottom: 15px; padding-right: 20PX; position: relative; cursor: pointer;
+    }
+    [class='footerUl'] li h4 b{
+        font-weight: 500; color: #494949;
+    }
+    [class='footerUl'] li:has(div.active) h4{
+        border: none;  
+    }
+    [class='footerUl'] li h4::after{
+        content: url('../images/ico_arrowPink.svg'); display: block;
+        position: absolute; right: 0; top: 0; width: 20px;
+        transition: all 0s ease-out; transform: rotate(0deg);
+    }
+    [class='footerUl'] li:has(div.active) h4::after{
+        transform: rotate(180deg);
+    }
+    [class='footerUl'] li div{
+        padding: 30px 15px; display: none;
+    }
+    [class='footerUl'] li div p{
+        font-weight: 500; color: #757575; line-height: 20px;
+    }
+    [class='footerUl'] li div p:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    [class='footerUl'] li div p a{
+        color: #ff4a81;
+    }
+    #searchPanel{
+        position: fixed; display: flex; justify-content: center; align-items: center;
+        top: -100px; width: 100%; max-height: 100px; padding: 30px 10px; box-sizing: border-box;
+        background-color: #fff; border-width: 0 0 1px 0; text-align: center;
+        transition: top 0.4s ease-out;
+    }
+    #searchPanel.active{
+        top: 0;
+    }
+    #searchPanel form div{
+        position: relative;
+    }
+    #searchPanel form div input[type="search"]{
+        min-width: 220px; line-height: 40px; padding: 0 45px 0 20px;
+        font-weight: 500; color: #757575; background-color: #e2e2e2;
+    }
+    #searchPanel form div input[type="submit"]{
+        position: absolute; right: 0; line-height: 40px; padding: 0 35px 0 0;
+        background: url('../images/ico_search.svg') left center / 20px no-repeat ;
+    }
+    #searchPanel > input[type="button"]{
+        margin-left: 20px; padding: 0;
+    }
+    /* ?search panel */
+    #cartPanel{
+        position: fixed; right: -100%; height: 100%; width: 100%;
+        padding: 25px 0; box-sizing: border-box; background-color: #fff;
+        transition: right 0.5s ease-in;
+    }
+    #cartPanel.active{
+        right: 0;
+    }
+    #cartPanel > input{
+        position: absolute; right: 10px; z-index: 9;
+    }
+    #cartPanel > div:first-of-type.active{
+        display: none;
+    }
+    #cartPanel div:first-of-type h2{
+        font-weight: 600; color: #242424; padding: 0 10px; margin-bottom: 20px;
+    }
+    #cartPanel > div:first-of-type form ul{
+        padding: 0 10px; list-style: none; height: 100%;
+    }
+    #cartPanel > div:first-of-type form ul li{
+        margin-bottom: 10px; display: flex;
+    }
+    #cartPanel > div:first-of-type form ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div:first-of-type form ul li a{
+        float: left; display: block; width: 45%; min-width: 100px; max-width: 100px; max-height: 100px; border-width: 1px;
+    }
+    #cartPanel > div:first-of-type form ul li a img{
+        width: 100%;
+    }
+    #cartPanel > div:first-of-type form ul li div{
+        width: 100%; margin-left: 10px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl{
+        margin-bottom: 20px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt{
+        font-weight: 400; color: #242424; line-height: 19px; margin-bottom: 5px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt small{
+        display: inline-block; width: 100%; margin-top: 5px;
+        font-weight: 500; color: #a8a8a8; 
+    }
+    #cartPanel > div:first-of-type form ul li div dl dd{
+         font-weight: 600; color: #757575;
+    }
+    #cartPanel > div:first-of-type form ul li div > span{
+        display: inline-block; min-width: 105px;
+    }
+    #cartPanel > div:first-of-type form ul li div > input{
+        float: right; padding: 0 10px; width: 20px; line-height: 40px; box-sizing: border-box;
+        background-image: url('../images/ico_delete.svg'); background-size: 20px;
+        background-position: right center;
+    }
+    #cartPanel > div:first-of-type form > div{
+        position: absolute; bottom: 0; width: 100%; box-sizing: border-box;
+        border-width: 1px 0 0 0; padding: 25px 10px; background-color: #fff;
+    }
+    #cartPanel > div:first-of-type form > div b,
+    #cartPanel > div:first-of-type form > div span{
+        font-weight: 700; color: #242424; padding: 0;
+    }
+    #cartPanel > div:first-of-type form > div span{
+        float: right;
+    }
+    #cartPanel > div:first-of-type form > div div{
+        margin-top: 30px;
+    }
+    #cartPanel > div:first-of-type form > div div a{
+        display: block; text-decoration: none; margin-bottom: 10px;
+    }
+    #cartPanel > div:first-of-type form > div div input{
+        display: block; width: 100%;
+    }
+    #cartPanel > div:last-of-type{
+        display: none; height: 100%; width: 100%; box-sizing: border-box;
+        text-align: center; padding: 0 10px;
+    }
+    #cartPanel > div:last-of-type.active{
+        display: block;
+    }
+    #cartPanel > div:last-of-type span{
+        display: block; position: relative; top: 50%; transform: translate(0, -50%);
+        font-weight: 600; color: #242424;
+    }
+    #cartPanel > div:last-of-type span a{
+        margin-top: 25px; width: 100%; max-width: 235px;
+        text-decoration: none; display: inline-block;
+    }
+    /* ? cart panel */
+    header{
+        position: fixed; z-index: 10; width: 100%; background-color: #fff;
+    }
+    header div{
+        position: relative; min-height: 70px; border-width: 0 0 1px; box-sizing: border-box;
+    }
+    header div *{
+        font-weight: 500; color: #757575; line-height: 70px; text-indent: -9999px;
+    }
+    header div > input:first-child{
+        position: absolute; width: 20px;
+        background: url('../images/ico_menu.svg') left center / 20px no-repeat;
+    }
+    header div > input:last-of-type{
+        position: absolute; width: 20px; margin-left: 40px;
+        background: url('../images/ico_search.svg') left center / 20px no-repeat;
+    }
+    header div h1{
+        margin: 0 auto; max-width: 78px;
+    }
+    header div h1 a{
+        display: block; max-height: 70px; padding: 12px 0; box-sizing: border-box;
+    }
+    header div h1 a img{
+        display: block; width: 100%;
+    }
+    header div span{
+        position: absolute; top: 0; right: 10px;
+    }
+    header div span::after{
+        content: ''; display: block; clear: both;
+    }
+    header div span a{
+        float: left; width: 20px;
+        background: url('../images/ico_account.svg') right center / 20px no-repeat;
+    }
+    header div span a[href*="sign"]{
+        background-image: url('../images/ico_lock.svg');
+    }
+    header div span input{
+        float: right; width: 20px; margin-left: 20px;
+        background: url('../images/ico_cart.svg') right center / 20px no-repeat;
+    }
+    header nav{
+        box-sizing: border-box; text-align: center; background-color: #fff;
+        position: fixed; top: 0; width: 100%; height: 100%; padding: 25px; display: none;
+    }
+    header nav.active{
+        display: block;
+    }
+    header nav input{
+        position: absolute; right: 10px;
+    }
+    header nav ul{
+        padding: 68px 0 0;
+    }
+    header nav ul li:not(:last-of-type){
+        margin-bottom: 28px;
+    }
+    header nav ul li a{
+        text-decoration: none; display: block; font-weight: 500; color:#242424; line-height: 30px;
+    }
+    header nav ul li a:hover{
+        color: #ff4a81;
+    }
+    /* * header */
+    footer{
+        border-width: 1px 0 0 0; padding-top: 80px; padding-bottom: 60px;
+    }
+    footer div a{
+        text-decoration: none;
+    }
+    footer div h2{
+        font-weight: 600; color: #242424;
+    }
+    footer div *:not(h2){
+        font-weight: 400;
+    }
+    footer div:first-child{
+        width: 100%; margin-bottom: 42px;
+    }
+    footer div:first-child h2{
+        margin-bottom: 20px;
+    }
+    footer div:first-child p{
+        line-height: 20px; margin-bottom: 30px; color: #757575;
+    }
+    footer div:first-child > a{
+        color: #a8a8a8; margin-bottom: 30px; display: inline-block;
+    }
+    footer div:first-child ul li{
+        display: inline-block; 
+    }
+    footer div:first-child ul li:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer div:first-child ul li a{
+        width: 35px; height: 35px; background-position: center; background-repeat: no-repeat; 
+        text-indent: -9999px; display: block;
+    }
+    footer div:first-child ul li:first-of-type a{background-image: url('../images/ico_sns_facebook.svg');}
+    footer div:first-child ul li:nth-of-type(2) a{background-image: url('../images/ico_sns_instargram.svg');}
+    footer div:first-child ul li:last-of-type a{background-image: url('../images/ico_sns_pinterest.svg');}
+
+    footer div:nth-of-type(2){
+        margin-bottom: 42px;
+    }
+    footer div:not(:first-child) h2{
+        position: relative; cursor: pointer; line-height: 30px;
+    }
+    footer div:not(:first-child):has(ul[style="display: none;"]) h2{
+        margin-bottom: 0;
+    }
+    footer div:not(:first-child) h2::after{
+        content: url('../images/btn_arrowDOWN.svg'); display: block;
+        position: absolute; right: 0; top: 0; width: 16px;
+        transition: all 0s ease-out; transform: rotate(0deg);
+    }
+    footer div:not(:first-child):has(ul.active) h2::after{
+        transform: rotate(180deg);
+    }
+    footer div:not(:first-child) ul{
+        list-style: none; display: none; padding-top: 12px
+    }
+    footer div:not(:first-child) ul li:not(:first-of-type){
+        margin-top: 12px;
+    }
+    footer div:not(:first-child) ul li a{
+        color: #757575; display: block; line-height: 20px;
+    }
+    footer div:not(:first-child) ul li a:hover{
+        color: #ff4a81;
+    }
+    footer > p{
+        clear: both; font-weight: 600; color: #494949; padding-top: 50px;
+    }
+    /* * footer */
+    .pager{
+        position: relative; border-width: 1px 0 0 0; margin-left: auto; margin-left: auto;
+        text-align: center; padding: 20px 10px; box-sizing: border-box;
+    }
+    .pager > *{
+        display: inline-block;  vertical-align: middle;
+    }
+    .pager span a{
+        display: inline-block; line-height: 25px; background-position: center;
+    }
+    .pager span:first-of-type a:first-child,
+    .pager span:last-of-type a:last-child{
+        /* display: none; */
+        width: 16px;
+    }
+    .pager span:first-of-type a:last-child,
+    .pager span:last-of-type a:last-child{
+        margin-left: 10px;
+    }
+    .pager span:first-of-type a:last-child,
+    .pager span:last-of-type a:first-child{
+        width: 9px;
+    }
+    .pager span:first-of-type a:first-child{
+        background-image: url('../images/btn_arrowLL.svg');
+    }
+    .pager span:first-of-type a:last-child{
+        background-image: url('../images/btn_arrowL.svg'); 
+    }
+    .pager span:last-of-type a:first-child{
+        background-image: url('../images/btn_arrowR.svg');
+    }
+    .pager span:last-of-type a:last-child{
+        background-image: url('../images/btn_arrowRR.svg'); 
+    }
+    .pager ol{
+        margin: 0 25px;
+    }
+    .pager ol li{
+        display: inline-block; padding-right: 34px; line-height: 25px; position: relative;
+    }
+    .pager ol li:has(a.active)::after{
+        font-size: 16px; line-height: 25px; font-weight: 500; color: #494949;
+        content: attr(data-count); position: absolute; bottom: 0px; right: 0;
+    }
+    .pager ol li a{
+        text-decoration: none; font-weight: 500; color: #242424; display: block;
+    }
+    .pager ol li a.active{
+        color: #ff4a81;
+    }
+    /* * pager */
+}
+
+/* ! mobile */
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .whiteBtn, .blackBtn, select,
+    #cartPanel > div:first-of-type form ul li div dl dt small,
+    header div *,
+    .prodDeContainer > div:first-child > div:last-child > p,
+    .inputEnterBox, .inputEnterBoxPay, .underline_a8,
+    .payStep01Container form > div > div:first-child > div fieldset:last-of-type div:last-of-type p,
+    .payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li:last-of-type > #newAddrOpen > div p,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:nth-child(2) > input,
+    .cartDeContainer form > div div:first-child textarea,
+    .withdrawalContainer form div:first-of-type ul li label,
+    .withdrawalContainer form div:nth-of-type(2) span textarea,
+    .accountHistoryContainer div:nth-of-type(2) form > span *:not(:last-child),
+    .sendInquiryContainer form div:first-child span:last-of-type textarea,
+    .writeRevContainer form > div:first-child span textarea,
+    .returnContainer form > div:first-child textarea,
+    .StockistsContainer > div:first-of-type ul li address p{
+        font-size: 16px;
+    }
+    #searchPanel form div input[type="search"],
+    #cartPanel > div:first-of-type form ul li div dl dd,
+    .numberComponent input[type='number'],
+    header nav ul li a,
+    .mainContainer .shopSlider ul li dl dd,
+    .mainContainer .collaboSlider + div div small,
+    .mainContainer .collaboSlider + div p,
+    .mainContainer .collaboSlider + div cite,
+    .mainContainer > div:last-child form input[type="email"],
+    .listContainer div:nth-of-type(2) aside > div ul > li:first-of-type label,
+    .listContainer div:nth-of-type(2) aside > div ul > li h4,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div input,
+    .listContainer div:nth-of-type(2) > ul li dl dd,
+    .prodDeContainer > div:first-child > div:last-child > span:last-of-type,
+    .prodDeContainer > div:first-child > div:last-child #afterpayInfoPopup p,
+    .prodDeContainer section table td,
+    .prodDeContainer > div:last-child h2 input,
+    .prodDeContainer > div:last-child #reviewPanel form textarea,
+    .titleLabel, .rePasswordContainer p, .rePasswordAfterContainer p,
+    .payCompContainer div span,
+    .payStep01Container form > div > div:first-child > div fieldset:first-of-type legend,
+    .payStep01Container form > div > div:first-child > div > div,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(2) span label,
+    .payStep02Container form > div > div:first-child > div > ul li span:last-child,
+    .payStep03Container form > div > div:first-child > div > ul li span:last-child,
+    .payStep02Container form > div > div:first-child > div fieldset ul li label,
+    .payStep02Container form > div > div:first-child > div fieldset ul li strong,
+    .payStep03Container form > div > div:first-child > div fieldset legend + p,
+    .payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li div:first-of-type label,
+    .payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li:last-of-type #afterPayOpen p,
+    .payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li div:first-of-type label,
+    .payStep03Container form > div > div:first-child > div > span label,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dt *,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dd,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:not(:last-of-type) strong,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child span b,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:last-of-type,
+    .cartDeContainer form > div div:last-child p,
+    .accountMainContainer > ul li span:last-child,
+    .accPnthofT, .accPLofT,
+    .editProfileContainer form div:first-of-type label,
+    .editProfileContainer form div:first-of-type h3,
+    .editProfileContainer form div:nth-of-type(2) span,
+    .editProfileContainer form div:nth-of-type(3) span,
+    .accountHistoryContainer > ul li:not(:first-child) span:first-child > span b,
+    .accountHistoryContainer > ul li:not(:first-child) span:nth-child(2),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(3),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(4),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(5),
+    .orderDeContainer div:first-of-type table tbody tr td,
+    .orderDeContainer div:last-of-type p,
+    .newAddrsContainer div form > span label,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(2),
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(5),
+    .qnaDeContainer > div div table tbody tr td,
+    .accountRevContainer > ul li:not(:first-child) > span:first-child span b,
+    .accountRevContainer > ul li:not(:first-child) > span:not(:first-child),
+    .accountRevContainer > ul li:not(:first-child) > span:not(:first-child) *:not(a),
+    .accountRevAftContainer > ul li:not(:first-child) > span:first-child span b,
+    .accountRevAftContainer > ul li:not(:first-child) > span:not(:first-child),
+    .accountRevAftContainer > ul li:not(:first-child) > span:not(:first-child) *:not(a),
+    .writeRevContainer form > div:first-child p, [class='footerTop'] div p,
+    [class='footerUl'] li div p,
+    .returnContainer form > div:last-child p,
+    .returnContainer form > div:last-child span,
+    .returnAftContainer span,
+    .careOurStContainer div p,
+    .careAboutContainer > div div p,
+    .careWholeContainer > div:last-of-type div p,
+    footer > p{
+        font-size: 17px;        
+    }
+    .mainContainer .shopSlider > a,
+    .mainContainer .collectSlider > a,
+    .mainContainer .collaboSlider > a,
+    .listContainer > div:first-of-type *,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(3) ol li label,
+    .listContainer div:nth-of-type(2) > ul li dl dt,
+    .prodDeContainer > div:first-child > div:last-child  form fieldset legend,
+    div[class^="payStep"] form > div > div:first-child > div ol li,
+    .payStep02Container form > div > div:first-child > div > ul li span:first-child,
+    .payStep03Container form > div > div:first-child > div > ul li span:first-child,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:not(:last-of-type),
+    [class^='account'] > .accountList ul li a,
+    .accountMainContainer div:last-of-type > span,
+    .orderDeContainer div:first-of-type table tbody tr th,
+    .orderDeContainer div:last-of-type h3,
+    [class='titleLi'],
+    .accountAddrsContainer form ul li:not(:first-child) > span:not(:last-child),
+    .accountQnAContainer > ul li:not(:first-child) > span:first-child,
+    .qnaDeContainer > div div table tbody tr th,
+    .StockistsContainer > div:first-of-type ul li address h3,
+    .listContainer > div:nth-of-type(2) aside h3,
+    div[class^="payStep"] form > div > div:last-child > div:first-of-type h2,
+    footer div{
+        font-size: 19px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt,
+    .mainContainer .mainSlider .mainS01 figure figcaption dl dd,
+    .mainContainer .shopSlider ul li dl dt,
+    .mainContainer .collectSlider ul li a span,
+    .mainContainer .collaboSlider ul li a span,
+    .mainContainer > div:last-child p,
+    .prodDeContainer section p,
+    .prodDeContainer section ul li,
+    .prodDeContainer section table th,
+    .prodDeContainer > div:last-child p,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dt,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child span,
+    .cartDeContainer form ul li:last-child h3,
+    .withdrawalContainer form div:not(:last-of-type) h3,
+    .accountHistoryContainer > ul li:not(:first-child) span:first-child > span,
+    .accountAddrsAftContainer form ul li:last-child h3,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(3) a,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(4),
+    .accountQnABeContainer > ul li:last-child h3,
+    .accountRevContainer > ul li:not(:first-child) > span:first-child span,
+    .accountRevAftContainer > ul li:not(:first-child) > span:first-child span,
+    [class='footerTop'] h3, [class='footerUl'] li h4,
+    .careAboutContainer > div h3,
+    .pager ol li a{
+        font-size: 21px;
+    }
+    .mainContainer .mainSlider .mainS03 div p,
+    .mainContainer .shopSlider + div p:last-of-type,
+    .mainContainer > div:last-child #emailSendPopup span,
+    .prodDeContainer section h2,
+    .prodDeContainer > div:last-child h2,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(2) legend,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(3) legend,
+    .payStep02Container form > div > div:first-child > div fieldset legend,
+    .payStep03Container form > div > div:first-child > div fieldset legend,
+    .accountMainContainer h2:last-of-type,
+    .accountAddrsContainer #deleteAlert p,
+    .withdrawalContainer #withdrawaReconfirm p,
+    .changePWContainer #changePwOK h3,
+    .careWholeContainer > div:last-of-type div h3{
+        font-size: 24px;
+    }
+    #cartPanel div:first-of-type h2,
+    #cartPanel > div:first-of-type form > div b,
+    #cartPanel > div:first-of-type form > div span,
+    .mainContainer .shopSlider h2, 
+    .mainContainer .collectSlider h2, 
+    .mainContainer .collaboSlider h2,
+    .mainContainer .shopSlider + div p:first-of-type,
+    .mainContainer .collaboSlider + div div h2,
+    .mainContainer > div:last-child h2,
+    .listContainer h2,
+    .prodDeContainer > div:first-child > div:last-child h2,
+    .prodDeContainer > div:first-child > div:last-child strong,
+    .pageMainTilte,
+    .payCompContainer div p,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:last-of-type,
+    .cartDeContainer form > div div:last-child b,
+    .cartDeContainer form > div div:last-child span,
+    .returnAftContainer p,
+    div[class^="payStep"] form > div > div:last-child > div:first-of-type > span{
+        font-size: 32px;
+    }
+    #cartPanel > div:last-of-type span,
+    .accountMainContainer div:last-of-type h3{
+        font-size: 40px;
+    }
+    .mainContainer .mainSlider .mainS02 div h2 small{
+        font-size: 30px;
+    }
+    .mainContainer .mainSlider .mainS01 figure figcaption dl dt,
+    .mainContainer .mainSlider .mainS03 div h2,
+    .mainContainer .shopSlider + div h2,
+    .payCompContainer div h2{
+        font-size: 42px;
+    }
+    .mainContainer .mainSlider .mainS02 div h2,
+    .accountMainContainer > ul li span:first-child{
+        font-size: 50px;
+    }
+    /* * font */
+    .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input){
+        background-image: url('../images/ico_close.svg');
+        width: 20px; height: 20px;
+    }
+    .blackBtn{
+        min-height: 50px;
+    }
+    .whiteBtn, .blackBtn{
+        line-height: 48px;
+    }
+    .prevControls > a{
+        display: inline-block; text-indent: -9999px; width: 20px;
+        background: url('../images/btn_arrowL.svg') right center / 9px 16px no-repeat;
+    }
+    .nextControls > a{
+        display: inline-block; text-indent: -9999px; width: 20px;
+        background: url('../images/btn_arrowR.svg') left center / 9px 16px no-repeat; 
+    }
+    input[type="checkbox"]{
+        width: 20px; height: 20px;
+    }
+    input[type="radio"]:not(.star){
+        width: 20px; height: 20px;
+    }
+    /* * button */
+    .numberComponent{
+        text-align: center; background-color: #fff; 
+        border-width: 1px; border-radius: 5px; box-sizing: border-box;
+    }
+    .numberComponent::after{
+        content: ''; display: block; clear: both;
+    }
+    .numberComponent input{
+        float: left; width: 33.33%; line-height: 50px;
+    }
+    .numberComponent input[type='number']{
+        text-align: center; font-weight: 600; color: #757575; padding: 0;
+    }
+    .numberComponent input:not(input[type='number']){
+        padding: 0; background-size: 16px 16px;
+    }
+    .numberComponent input:first-child{
+        background: url('../images/btn_minus.svg');
+        background-position: left 20px center;
+    }
+    .numberComponent input:last-child{
+        background-image: url('../images/btn_plus.svg');
+        background-position: right 20px center;
+    }
+    /* * number component */
+    header div, header nav,
+    .mainContainer .collaboSlider + div, .listContainer > *:not(.pager),
+    .prodDeContainer, .cartDeContainer,
+    [class^='account'], .withdrawalContainer,
+    .orderDeContainer, .accountAddrsContainer,
+    .newAddrsContainer, .accountQnAContainer,
+    .sendInquiryContainer, .qnaDeContainer,
+    .accountRevContainer, .accountRevAftContainer
+    .writeRevContainer, [class^='info'],
+    .returnContainer, .returnAftContainer,
+    .StockistsContainer, .careOurStContainer,
+    .careAboutContainer, .careTermsContainer,
+    .careWholeContainer, footer{
+        padding-right: 3.12%; padding-left: 3.12%;
+    }
+    header + [class$='Container']{
+        padding-top: 160px;
+    }
+    .mainContainer .collaboSlider + div,
+    .listContainer, .prodDeContainer,
+    .signInContainer{
+        max-width: 1920px;
+    }
+    .prodDeContainer, .signInContainer,
+    .rePasswordContainer, .rePasswordAfterContainer,
+    .createAccContainer, .cartDeContainer,
+    [class^='account'], .withdrawalContainer,
+    .editProfileContainer, .changePWContainer,
+    .orderDeContainer, .accountAddrsContainer,
+    .newAddrsContainer, .accountQnAContainer,
+    .sendInquiryContainer, .qnaDeContainer,
+    .accountRevContainer, .accountRevAftContainer,
+    .writeRevContainer, [class^='info'],
+    .returnAftContainer, .returnContainer,
+    .StockistsContainer, .careOurStContainer,
+    .careAboutContainer, .careTermsContainer,
+    .careWholeContainer{
+        max-width: 1920px; margin: 0 auto 85px;
+    }
+    .signInContainer form div,
+    .rePasswordContainer > div:first-of-type form div,
+    .createAccContainer form div,
+    .editProfileContainer form div,
+    .changePWContainer form div,
+    .sendInquiryContainer form div,
+    .writeRevContainer form > div,
+    .returnContainer form > div,
+    .newAddrsContainer div{
+        max-width: 520px; margin: 0 auto; text-align: center;
+    }
+    /* * */
+    .pageMainTilte{
+        font-weight: 600; color: #000; text-align: center; padding-top: 60px; padding-bottom: 50px;
+    }
+    .titleLabel{
+        font-weight: 500; color: #242424; display: block; text-align: left; margin-bottom: 15px;
+    }
+    .inputEnterBox,
+    .inputEnterBoxPay{
+        font-weight: 500; color: #757575; border-width: 1px; border-radius: 5px;
+        display: block; line-height: 48px; padding: 0 0 0 15px; box-sizing: border-box; width: 100%;
+    }
+    .inputEnterBox::placeholder,
+    .inputEnterBoxPay::placeholder{
+        color: #cfcfcf;
+    }
+    .inputEnterBox:not(:last-of-type),
+    .editProfileContainer form div:first-of-type,
+    .editProfileContainer form div:first-of-type span,
+    .editProfileContainer form div:first-of-type a{
+        margin-bottom: 30px;
+    }
+    .inputEnterBox:last-of-type:not(.newAddrsContainer div form div:nth-of-type(1) input[id="addrLine2"]){
+        margin-bottom: 35px;
+    }
+    .underline_a8{
+        font-weight: 500; color: #a8a8a8; background-color: transparent;
+         text-decoration: underline;  text-underline-position : under;
+    }
+    .underline_a8:hover{
+        color: #ff4a81;
+    }
+    /* * */
+    [class^='account'] > .accountList{
+        border-width: 1px; padding: 0 15px; position: relative; border-radius: 5px; box-sizing: border-box;
+        margin-bottom: 50px;
+    }
+    [class^='account'] > .accountList ul::after{
+        content: ''; display: block; clear: both;
+    }
+    [class^='account'] > .accountList ul li{
+        float: left; list-style: none; 
+    }
+    [class^='account'] > .accountList ul li:not(:first-of-type){
+        margin-left: 2.77%;
+    }
+    [class^='account'] > .accountList ul li a{
+        display: block; max-height: 80px; padding: 30px 0; box-sizing: border-box;
+        font-weight: 500; color: #242424; text-decoration: none;
+    }
+    [class^='account'] > .accountList ul li a.active{
+        color: #ff4a81;
+    }
+    [class^='account'] > .accountList > a{
+        position: absolute; top: 50%; transform: translateY(-50%); right: 15px; line-height: 80px;
+    }
+    [for^="uploadPhoto"]{
+        display: inline-block; text-indent: -9999px; width: 50px; height: 50px; vertical-align: middle; cursor: pointer;
+        background: url('../images/ico_photo.png') center / 20px no-repeat; border-width: 1px; border-radius: 5px; box-sizing: border-box;
+    }
+    [id^='uploadPhoto']{
+        display: none;
+    }
+    /* * */
+    [class^='accP']{
+        text-align: center; font-weight: 500; color: #494949; line-height: 20px;
+    }
+    p.accPnthofT{
+        margin-bottom: 10px;
+    }
+    p.accPLofT{
+        margin-bottom: 50px;
+    }
+    /* * */
+    [class='titleLi']{
+        font-weight: 500; color: #242424; border-width: 1px 0; padding: 20px 0; display: flex;
+        box-sizing: border-box; text-align: center; line-height: 23px; min-height: 60px;
+    }
+    [class='titleLi'] > span{
+        align-self: center;
+    }
+    /* * */
+    [class='footerTop'], [class='footerUl']{
+        max-width: 1210px; margin: 0 auto;
+    }
+    [class='footerTop'] h3, [class='footerUl'] li h4, .careAboutContainer > div h3{
+        font-weight: 500; color: #ff92b3; line-height: 25px;
+    }
+    [class='footerTop']{
+        margin-bottom: 55px;
+    }
+    [class='footerTop'] h3,
+    .careAboutContainer > div h3{
+        padding-bottom: 25px;
+    }
+    [class='footerTop'] div,
+    .careAboutContainer > div div{
+        border-width: 1px; border-radius: 5px; padding: 40px 20px; box-sizing: border-box;
+    }
+    [class='footerTop'] div p,
+    .careAboutContainer > div div p{
+        font-weight: 500; color: #757575; line-height: 30px;
+    }
+    [class='footerTop'] div p:not(:last-of-type),
+    .careAboutContainer > div div p:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    [class='footerTop'] div a{
+        color: #ff4a81;
+    }
+    .info02Container [class='footerTop'] > div,
+    .careTermsContainer [class='footerTop'] > div{
+        max-height: 800px; overflow-y: scroll;
+    }
+
+    [class='footerUl']{
+        list-style: none;
+    }
+    [class='footerUl'] li{
+        border-width: 0 0 1px;
+    }
+    [class='footerUl'] li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    [class='footerUl'] li h4{
+        padding-bottom: 15px; position: relative; cursor: pointer;
+    }
+    [class='footerUl'] li h4 b{
+        font-weight: 500; color: #494949;
+    }
+    [class='footerUl'] li:has(div.active) h4{
+        border: none;  
+    }
+    [class='footerUl'] li h4::after{
+        content: url('../images/ico_arrowPink.svg'); display: block;
+        position: absolute; right: 0; top: 0; width: 20px;
+        transition: all 0s ease-out; transform: rotate(0deg);
+    }
+    [class='footerUl'] li:has(div.active) h4::after{
+        transform: rotate(180deg);
+    }
+    [class='footerUl'] li div{
+        padding: 40px 20px; display: none;
+    }
+    [class='footerUl'] li div p{
+        font-weight: 500; color: #757575; line-height: 30px;
+    }
+    [class='footerUl'] li div p:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    [class='footerUl'] li div p a{
+        color: #ff4a81;
+    }
+    #searchPanel{
+        position: fixed;  display: flex; justify-content: center; align-items: center;
+        top: -210px; width: 100%; max-height: 200px; padding: 70px 0; box-sizing: border-box;
+        background-color: #fff; border-width: 0 0 1px 0; text-align: center;
+        transition: top 0.4s ease-out;
+    }
+    #searchPanel.active{
+        top: 0;
+    }
+    #searchPanel form div{
+        position: relative;
+    }
+    #searchPanel form div input[type="search"]{
+        min-width: 460px; line-height: 60px; padding: 0 55px 0 30px;
+        font-weight: 500; color: #757575; background-color: #e2e2e2;
+    }
+    #searchPanel form div input[type="submit"]{
+        position: absolute; right: 0; line-height: 60px; padding: 0 45px 0 0;
+        background: url('../images/ico_search.svg') left center / 20px no-repeat ;
+    }
+    #searchPanel > input[type="button"]{
+        margin-left: 30px; padding: 0;
+    }
+    /* ?search panel */
+    #cartPanel{
+        position: fixed; right: -600px; height: 100%; border-width: 0 0 0 1px;
+        padding: 35px 0; box-sizing: border-box; background-color: #fff;
+        transition: right 0.5s ease-in;
+    }
+    #cartPanel.active{
+        right: 0;
+    }
+    #cartPanel > input{
+        position: absolute; right: 25px; z-index: 9;
+    }
+    #cartPanel > div:first-of-type.active{
+        display: none;
+    }
+    #cartPanel div:first-of-type h2{
+        font-weight: 600; color: #242424; padding: 0 25px; margin-bottom: 30px;
+    }
+    #cartPanel > div:first-of-type form ul{
+        padding: 0 25px; list-style: none; height: 100%;
+    }
+    #cartPanel > div:first-of-type form ul li{
+        margin-bottom: 15px;
+    }
+    #cartPanel > div:first-of-type form ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div:first-of-type form ul li a{
+        float: left; display: block; width: 125px; height: 125px; border-width: 1px;
+    }
+    #cartPanel > div:first-of-type form ul li a img{
+        width: 100%;
+    }
+    #cartPanel > div:first-of-type form ul li div{
+        float: left; margin-left: 20px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl{
+        margin-bottom: 30px; position: relative;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt{
+        font-weight: 400; color: #242424; padding-right: 115px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt small{
+        display: inline-block; width: 100%; margin-top: 10px;
+        font-weight: 500; color: #a8a8a8; 
+    }
+    #cartPanel > div:first-of-type form ul li div dl dd{
+        position: absolute; top: 0; right: 0; font-weight: 600; color: #757575;
+    }
+    #cartPanel > div:first-of-type form ul li div > span{
+        display: inline-block; min-width: 150px;
+    }
+    #cartPanel > div:first-of-type form ul li div > input{
+        float: right; padding: 0 20px; width: 20px; line-height: 50px; box-sizing: border-box;
+        background-image: url('../images/ico_delete.svg'); background-size: 20px;
+        background-position: right center;
+    }
+    #cartPanel > div:first-of-type form > div{
+        position: absolute; bottom: 0; width: 100%; box-sizing: border-box;
+        border-width: 1px 0 0 0; padding: 35px 25px; background-color: #fff;
+    }
+    #cartPanel > div:first-of-type form > div b,
+    #cartPanel > div:first-of-type form > div span{
+        font-weight: 700; color: #242424; padding: 0;
+    }
+    #cartPanel > div:first-of-type form > div span{
+        float: right;
+    }
+    #cartPanel > div:first-of-type form > div div{
+        margin-top: 40px;
+    }
+    #cartPanel > div:first-of-type form > div div a{
+        float: left; text-decoration: none; width: 48.5%;
+    }
+    #cartPanel > div:first-of-type form > div div input{
+        float: right; margin-left: 3%; width: 48.5%;
+    }
+    #cartPanel > div:last-of-type{
+        display: none; height: 100%; box-sizing: border-box;
+        text-align: center; padding: 0 30px; min-width: 550px;
+    }
+    #cartPanel > div:last-of-type.active{
+        display: block;
+    }
+    #cartPanel > div:last-of-type span{
+        display: block; position: relative; top: 50%; transform: translate(0, -50%);
+        font-weight: 600; color: #242424;
+    }
+    #cartPanel > div:last-of-type span a{
+        margin-top: 35px; width: 100%; max-width: 235px;
+        text-decoration: none; display: inline-block;
+    }
+    /* ? cart panel */
+    header{
+        position: fixed; z-index: 10; width: 100%; background-color: #fff;
+    }
+    header div{
+        position: relative; max-height: 100px;
+    }
+    header div *{
+        font-weight: 500; color: #757575; line-height: 100px;
+    }
+    header div > input:first-child{
+        display: none;
+    }
+    header div > input:last-of-type{
+        position: absolute; padding: 0 0 0 30px;
+        background: url('../images/ico_search.svg') left center / 20px no-repeat;
+    }
+    header div h1{
+        margin: 0 auto; max-width: 111px;
+    }
+    header div h1 a{
+        display: block;   
+    }
+    header div h1 a img{
+        width: 100%; vertical-align: middle;
+    }
+    header div span{
+       position: absolute; top: 0; right: 3.12%;
+    }
+    header div span a{
+        text-decoration: none; padding: 0 30px 0 0;
+        background: url('../images/ico_account.svg') right center / 20px no-repeat;
+    }
+    /* ! */
+    header div span a[href*="sign"]{
+        background-image: url('../images/ico_lock.svg');
+    }
+    /* ! */
+    header div span input{
+        padding: 0 30px 0 0; margin-left: 35px;
+        background: url('../images/ico_cart.svg') right center / 20px no-repeat;
+    }
+    header nav{
+        border-width: 1px 0; box-sizing: border-box; max-height: 60px;
+    }
+    header nav input{
+        display: none;
+    }
+    header nav ul{
+        display: flex; justify-content: space-between;
+    }
+    header nav ul li{
+        display: inline-block;
+    }
+    header nav ul li a{
+        text-decoration: none; display: block;  max-height: 58px;
+        box-sizing: border-box; line-height: 58px; font-weight: 500; color: #242424;
+    }
+    header nav ul li a.active{
+        color: #ff4a81; border-bottom: 2px solid #ff4a81;
+    }
+    header nav ul li a:after{
+        content: ''; display: block; width: 100%; height: 2px;
+        transition: all 0.2s ease-out; transform: scaleX(0) translateY(-2px); 
+    }
+    header nav ul li a:hover{
+        color: #ff4a81;
+    }
+    header nav ul li a:hover:after{
+         background-color: #ff4a81; transform: scaleX(1) translateY(-2px);
+    }
+    /* * header */
+    footer{
+        border-width: 1px 0 0 0; padding-top: 115px; padding-bottom: 85px;
+    }
+    footer div{
+       float: left; 
+    }
+    footer div a{
+        text-decoration: none;
+    }
+    footer div h2{
+        font-weight: 600; color: #242424;
+    }
+    footer div *:not(h2){
+        font-weight: 400;
+    }
+    footer div:first-child{
+        width: 100%; margin-bottom: 60px;
+    }
+    footer div:first-child h2{
+        margin-bottom: 20px;
+    }
+    footer div:first-child p{
+        line-height: 30px; max-width: 573px; margin-bottom: 30px; color: #757575;
+    }
+    footer div:first-child > a{
+        color: #a8a8a8; margin-bottom: 30px; display: inline-block;
+    }
+    footer div:first-child ul li{
+        display: inline-block; 
+    }
+    footer div:first-child ul li:not(:first-of-type){
+        margin-left: 30px;
+    }
+    footer div:first-child ul li a{
+        width: 35px; height: 35px; background-position: center; background-repeat: no-repeat; 
+        text-indent: -9999px; display: block;
+    }
+    footer div:first-child ul li:first-of-type a{background-image: url('../images/ico_sns_facebook.svg');}
+    footer div:first-child ul li:nth-of-type(2) a{background-image: url('../images/ico_sns_instargram.svg');}
+    footer div:first-child ul li:last-of-type a{background-image: url('../images/ico_sns_pinterest.svg');}
+
+    footer div:not(:first-child){
+        width: 50%;
+    }
+    footer div:not(:first-child) h2{
+        position: relative; cursor: pointer; line-height: 30px;
+    }
+    footer div:not(:first-child) h2::after{
+        content: url('../images/btn_arrowDOWN.svg'); display: block;
+        position: absolute; right: 14.97%; top: 0; width: 16px;
+        transition: all 0s ease-out; transform: rotate(0deg);
+    }
+    footer div:not(:first-child):has(ul.active) h2::after{
+        transform: rotate(180deg);
+    }
+    footer div:not(:first-child) ul{
+        list-style: none; display: none; padding-top: 25px;
+    }
+    footer div:not(:first-child) ul li:not(:first-of-type){
+        margin-top: 15px;
+    }
+    footer div:not(:first-child) ul li a{
+        color: #757575; display: block; line-height: 20px;
+    }
+    footer div:not(:first-child) ul li a:hover{
+        color: #ff4a81;
+    }
+    footer > p{
+        clear: both; font-weight: 600; color: #494949; padding-top: 60px;
+    }
+    /* * footer */
+    .pager{
+        position: relative; border-width: 1px 0 0 0; margin-left: auto; margin-left: auto;
+        text-align: center; padding: 30px 0; box-sizing: border-box;
+    }
+    .pager > *{
+        display: inline-block;  vertical-align: middle;
+    }
+    .pager span a{
+        display: inline-block; line-height: 35px; background-position: center;
+    }
+    .pager span:first-of-type a:first-child,
+    .pager span:last-of-type a:last-child{
+        width: 16px;
+    }
+    .pager span:first-of-type a:last-child,
+    .pager span:last-of-type a:first-child{
+        width: 9px;
+    }
+    .pager span:first-of-type a:last-child,
+    .pager span:last-of-type a:last-child{
+        margin-left: 15px;
+    }
+    .pager span:first-of-type a:first-child{
+        background-image: url('../images/btn_arrowLL.svg');
+    }
+    .pager span:first-of-type a:last-child{
+        background-image: url('../images/btn_arrowL.svg'); 
+    }
+    .pager span:last-of-type a:first-child{
+        background-image: url('../images/btn_arrowR.svg');
+    }
+    .pager span:last-of-type a:last-child{
+        background-image: url('../images/btn_arrowRR.svg'); 
+    }
+    .pager ol{
+        margin: 0 35px; 
+    }
+    .pager ol li{
+        display: inline-block; width: 35px; line-height: 35px;
+    }
+    .pager ol li:not(:first-child){
+        margin-left: 10px;
+    }
+    .pager ol li a{
+        text-decoration: none; font-weight: 500; color: #242424; display: block;
+    }
+    .pager ol li a.active{
+        background-color: #ff4a81; border-radius: 25px; color: #fff;
+    }
+    /* * pager */
+}
+
+/* ! tablet */
+
+@media screen and (min-width: 1280px){
+    .whiteBtn, .blackBtn, select,
+    #cartPanel > div:first-of-type form ul li div dl dt small,
+    header div *,
+    .prodDeContainer > div:first-child > div:last-child > p,
+    .inputEnterBox, .inputEnterBoxPay, .underline_a8,
+    .payStep01Container form > div > div:first-child > div fieldset:last-of-type div:last-of-type p,
+    .payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li:last-of-type > #newAddrOpen > div p,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:nth-child(2) > input,
+    .cartDeContainer form > div div:first-child textarea,
+    .withdrawalContainer form div:first-of-type ul li label,
+    .withdrawalContainer form div:nth-of-type(2) span textarea,
+    .accountHistoryContainer div:nth-of-type(2) form > span *:not(:last-child),
+    .sendInquiryContainer form div:first-child span:last-of-type textarea,
+    .writeRevContainer form > div:first-child span textarea,
+    .returnContainer form > div:first-child textarea,
+    .StockistsContainer > div:first-of-type ul li address p{
+        font-size: 18px;
+    }
+    #searchPanel form div input[type="search"],
+    #cartPanel > div:first-of-type form ul li div dl dd,
+    .numberComponent input[type='number'],
+    header nav ul li a,
+    .mainContainer .shopSlider ul li dl dd,
+    .mainContainer .collaboSlider + div div small,
+    .mainContainer .collaboSlider + div p,
+    .mainContainer .collaboSlider + div cite,
+    .mainContainer > div:last-child form input[type="email"],
+    .listContainer div:nth-of-type(2) aside > div ul > li:first-of-type label,
+    .listContainer div:nth-of-type(2) aside > div ul > li h4,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(2) div input,
+    .listContainer div:nth-of-type(2) > ul li dl dd,
+    .prodDeContainer > div:first-child > div:last-child > span:last-of-type,
+    .prodDeContainer > div:first-child > div:last-child #afterpayInfoPopup p,
+    .prodDeContainer section table td,
+    .prodDeContainer > div:last-child h2 input,
+    .prodDeContainer > div:last-child #reviewPanel form textarea,
+    .titleLabel, .rePasswordContainer p, .rePasswordAfterContainer p,
+    .payCompContainer div span,
+    .payStep01Container form > div > div:first-child > div fieldset:first-of-type legend,
+    .payStep01Container form > div > div:first-child > div > div,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(2) span label,
+    .payStep02Container form > div > div:first-child > div > ul li span:last-child,
+    .payStep03Container form > div > div:first-child > div > ul li span:last-child,
+    .payStep02Container form > div > div:first-child > div fieldset ul li label,
+    .payStep02Container form > div > div:first-child > div fieldset ul li strong,
+    .payStep03Container form > div > div:first-child > div fieldset legend + p,
+    .payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li div:first-of-type label,
+    .payStep03Container form > div > div:first-child > div fieldset:first-of-type ul li:last-of-type #afterPayOpen p,
+    .payStep03Container form > div > div:first-child > div fieldset:last-of-type ul li div:first-of-type label,
+    .payStep03Container form > div > div:first-child > div > span label,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dt *,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dd,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:not(:last-of-type) strong,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child span b,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:last-of-type,
+    .cartDeContainer form > div div:last-child p,
+    .accountMainContainer > ul li span:last-child,
+    .accPnthofT, .accPLofT,
+    .editProfileContainer form div:first-of-type label,
+    .editProfileContainer form div:first-of-type h3,
+    .editProfileContainer form div:nth-of-type(2) span,
+    .editProfileContainer form div:nth-of-type(3) span,
+    .accountHistoryContainer > ul li:not(:first-child) span:first-child > span b,
+    .accountHistoryContainer > ul li:not(:first-child) span:nth-child(2),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(3),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(4),
+    .accountHistoryContainer > ul li:not(:first-child) > span:nth-child(5),
+    .orderDeContainer div:first-of-type table tbody tr td,
+    .orderDeContainer div:last-of-type p,
+    .newAddrsContainer div form > span label,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(2),
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(5),
+    .qnaDeContainer > div div table tbody tr td,
+    .accountRevContainer > ul li:not(:first-child) > span:first-child span b,
+    .accountRevContainer > ul li:not(:first-child) > span:not(:first-child),
+    .accountRevContainer > ul li:not(:first-child) > span:not(:first-child) *:not(a),
+    .accountRevAftContainer > ul li:not(:first-child) > span:first-child span b,
+    .accountRevAftContainer > ul li:not(:first-child) > span:not(:first-child),
+    .accountRevAftContainer > ul li:not(:first-child) > span:not(:first-child) *:not(a),
+    .writeRevContainer form > div:first-child p, [class='footerTop'] div p,
+    [class='footerUl'] li div p,
+    .returnContainer form > div:last-child p,
+    .returnContainer form > div:last-child span,
+    .returnAftContainer span,
+    .careOurStContainer div p,
+    .careAboutContainer > div div p,
+    .careWholeContainer > div:last-of-type div p,
+    footer > p{
+        font-size: 20px;        
+    }
+    .mainContainer .shopSlider > a,
+    .mainContainer .collectSlider > a,
+    .mainContainer .collaboSlider > a,
+    .listContainer > div:first-of-type *,
+    .listContainer div:nth-of-type(2) aside > div ul > li:nth-child(3) ol li label,
+    .listContainer div:nth-of-type(2) > ul li dl dt,
+    .prodDeContainer > div:first-child > div:last-child  form fieldset legend,
+    div[class^="payStep"] form > div > div:first-child > div ol li,
+    .payStep02Container form > div > div:first-child > div > ul li span:first-child,
+    .payStep03Container form > div > div:first-child > div > ul li span:first-child,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:not(:last-of-type),
+    [class^='account'] > .accountList ul li a,
+    .accountMainContainer div:last-of-type > span,
+    .orderDeContainer div:first-of-type table tbody tr th,
+    .orderDeContainer div:last-of-type h3,
+    [class='titleLi'],
+    .accountAddrsContainer form ul li:not(:first-child) > span:not(:last-child),
+    .accountQnAContainer > ul li:not(:first-child) > span:first-child,
+    .qnaDeContainer > div div table tbody tr th,
+    .StockistsContainer > div:first-of-type ul li address h3,
+    footer div{
+        font-size: 22px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt,
+    .mainContainer .mainSlider .mainS01 figure figcaption dl dd,
+    .mainContainer .shopSlider ul li dl dt,
+    .mainContainer .collectSlider ul li a span,
+    .mainContainer .collaboSlider ul li a span,
+    .mainContainer > div:last-child p,
+    .prodDeContainer section p,
+    .prodDeContainer section ul li,
+    .prodDeContainer section table th,
+    .prodDeContainer > div:last-child p,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of-type li div dl dt,
+    .cartDeContainer form ul li:not(:first-child, :last-child) > span:first-child span,
+    .cartDeContainer form ul li:last-child h3,
+    .withdrawalContainer form div:not(:last-of-type) h3,
+    .accountHistoryContainer > ul li:not(:first-child) span:first-child > span,
+    .accountAddrsAftContainer form ul li:last-child h3,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(3) a,
+    .accountQnAContainer > ul li:not(:first-child) > span:nth-child(4),
+    .accountQnABeContainer > ul li:last-child h3,
+    .accountRevContainer > ul li:not(:first-child) > span:first-child span,
+    .accountRevAftContainer > ul li:not(:first-child) > span:first-child span,
+    [class='footerTop'] h3, [class='footerUl'] li h4,
+    .careAboutContainer > div h3,
+    .pager ol li a{
+        font-size: 25px;
+    }
+    .mainContainer .mainSlider .mainS03 div p,
+    .mainContainer .shopSlider + div p:last-of-type,
+    .mainContainer > div:last-child #emailSendPopup span,
+    .prodDeContainer section h2,
+    .prodDeContainer > div:last-child h2,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(2) legend,
+    .payStep01Container form > div > div:first-child > div fieldset:nth-of-type(3) legend,
+    .payStep02Container form > div > div:first-child > div fieldset legend,
+    .payStep03Container form > div > div:first-child > div fieldset legend,
+    .accountMainContainer h2:last-of-type,
+    .accountAddrsContainer #deleteAlert p,
+    .withdrawalContainer #withdrawaReconfirm p,
+    .changePWContainer #changePwOK h3,
+    .careWholeContainer > div:last-of-type div h3{
+        font-size: 35px;
+    }
+    #cartPanel div:first-of-type h2,
+    #cartPanel > div:first-of-type form > div b,
+    #cartPanel > div:first-of-type form > div span,
+    .mainContainer .shopSlider h2, 
+    .mainContainer .collectSlider h2, 
+    .mainContainer .collaboSlider h2,
+    .mainContainer .shopSlider + div p:first-of-type,
+    .mainContainer .collaboSlider + div div h2,
+    .mainContainer > div:last-child h2,
+    .listContainer h2,
+    .prodDeContainer > div:first-child > div:last-child h2,
+    .prodDeContainer > div:first-child > div:last-child strong,
+    .pageMainTilte,
+    .payCompContainer div p,
+    div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:last-of-type li:last-of-type,
+    .cartDeContainer form > div div:last-child b,
+    .cartDeContainer form > div div:last-child span,
+    .returnAftContainer p{
+        font-size: 40px;
+    }
+    #cartPanel > div:last-of-type span,
+    .accountMainContainer div:last-of-type h3{
+        font-size: 50px;
+    }
+    .mainContainer .mainSlider .mainS02 div h2 small{
+        font-size: 60px;
+    }
+    .mainContainer .mainSlider .mainS01 figure figcaption dl dt,
+    .mainContainer .mainSlider .mainS03 div h2,
+    .mainContainer .shopSlider + div h2,
+    .payCompContainer div h2{
+        font-size: 80px;
+    }
+    .mainContainer .mainSlider .mainS02 div h2,
+    .accountMainContainer > ul li span:first-child{
+        font-size: 90px;
+    }
+    /* * font */
+    .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input){
+        background-image: url('../images/ico_close.svg');
+        width: 25px; height: 25px;
+    }
+    .blackBtn{
+        min-height: 60px;
+    }
+    .whiteBtn, .blackBtn{
+        line-height: 58px;
+    }
+    .prevControls > a{
+        display: inline-block; text-indent: -9999px; width: 30px;
+        background: url('../images/btn_arrowL.svg') right center / 12px 20px no-repeat;
+    }
+    .nextControls > a{
+        display: inline-block; text-indent: -9999px; width: 30px;
+        background: url('../images/btn_arrowR.svg') left center / 12px 20px no-repeat;
+    }
+    input[type="checkbox"]{
+        width: 25px; height: 25px;
+    }
+    input[type="radio"]:not(.star){
+        width: 25px; height: 25px;
+    }
+    /* * button */
+    .numberComponent{
+        text-align: center; background-color: #fff; 
+        border-width: 1px; border-radius: 5px; box-sizing: border-box;
+    }
+    .numberComponent::after{
+        content: ''; display: block; clear: both;
+    }
+    .numberComponent input{
+        float: left; width: 33.33%; line-height: 60px;
+    }
+    .numberComponent input[type='number']{
+        text-align: center; font-weight: 600; color: #757575; padding: 0;
+    }
+    .numberComponent input:not(input[type='number']){
+        padding: 0; background-size: 16px 16px;
+    }
+    .numberComponent input:first-child{
+        background: url('../images/btn_minus.svg');
+        background-position: left 20px center;
+    }
+    .numberComponent input:last-child{
+        background-image: url('../images/btn_plus.svg');
+        background-position: right 20px center;
+    }
+    /* * number component */
+    header div, header nav,
+    .mainContainer .collaboSlider + div, .listContainer > *:not(.pager),
+    .prodDeContainer, .cartDeContainer,
+    [class^='account'], .withdrawalContainer,
+    .orderDeContainer, .accountAddrsContainer,
+    .newAddrsContainer, .accountQnAContainer,
+    .sendInquiryContainer, .qnaDeContainer,
+    .accountRevContainer, .accountRevAftContainer
+    .writeRevContainer, [class^='info'],
+    .returnContainer, .returnAftContainer,
+    .StockistsContainer, .careOurStContainer,
+    .careAboutContainer, .careTermsContainer,
+    .careWholeContainer, footer{
+        padding-right: 2.86%; padding-left: 2.86%;
+    }
+    header + [class$='Container']{
+        padding-top: 220px;
+    }
+    .mainContainer .collaboSlider + div,
+    .listContainer, .prodDeContainer,
+    .signInContainer{
+        max-width: 1920px;
+    }
+    .prodDeContainer, .signInContainer,
+    .rePasswordContainer, .rePasswordAfterContainer,
+    .createAccContainer, .cartDeContainer,
+    [class^='account'], .withdrawalContainer,
+    .editProfileContainer, .changePWContainer,
+    .orderDeContainer, .accountAddrsContainer,
+    .newAddrsContainer, .accountQnAContainer,
+    .sendInquiryContainer, .qnaDeContainer,
+    .accountRevContainer, .accountRevAftContainer,
+    .writeRevContainer, [class^='info'],
+    .returnAftContainer, .returnContainer,
+    .StockistsContainer, .careOurStContainer,
+    .careAboutContainer, .careTermsContainer,
+    .careWholeContainer{
+        max-width: 1920px; margin: 0 auto 130px;
+    }
+    .signInContainer form div,
+    .rePasswordContainer > div:first-of-type form div,
+    .createAccContainer form div,
+    .editProfileContainer form div,
+    .changePWContainer form div,
+    .sendInquiryContainer form div,
+    .writeRevContainer form > div,
+    .returnContainer form > div{
+        max-width: 520px; margin: 0 auto; text-align: center;
+    }
+    /* * */
+    .pageMainTilte{
+        font-weight: 600; color: #000; text-align: center; padding-top: 80px; padding-bottom: 60px;
+    }
+    .titleLabel{
+        font-weight: 500; color: #242424; display: block; text-align: left; margin-bottom: 15px;
+    }
+    .inputEnterBox,
+    .inputEnterBoxPay{
+        font-weight: 500; color: #757575; border-width: 1px; border-radius: 5px;
+        display: block; line-height: 58px; padding: 0 0 0 15px; box-sizing: border-box; width: 100%;
+    }
+    .inputEnterBox::placeholder,
+    .inputEnterBoxPay::placeholder{
+        color: #cfcfcf;
+    }
+    .inputEnterBox:not(:last-of-type),
+    .editProfileContainer form div:first-of-type,
+    .editProfileContainer form div:first-of-type span,
+    .editProfileContainer form div:first-of-type a{
+        margin-bottom: 30px;
+    }
+    .inputEnterBox:last-of-type{
+        margin-bottom: 35px;
+    }
+    .underline_a8{
+        font-weight: 500; color: #a8a8a8; background-color: transparent;
+         text-decoration: underline;  text-underline-position : under;
+    }
+    .underline_a8:hover{
+        color: #ff4a81;
+    }
+    /* * */
+    [class^='account'] > .accountList{
+        border-width: 1px; padding: 0 55px; position: relative; border-radius: 5px; box-sizing: border-box;
+        margin-bottom: 60px;
+    }
+    [class^='account'] > .accountList ul::after{
+        content: ''; display: block; clear: both;
+    }
+    [class^='account'] > .accountList ul li{
+        float: left; list-style: none; 
+    }
+    [class^='account'] > .accountList ul li:not(:first-of-type){
+        margin-left: 5%;
+    }
+    [class^='account'] > .accountList ul li a{
+        display: block; max-height: 80px; padding: 30px 0; box-sizing: border-box;
+        font-weight: 500; color: #242424; text-decoration: none;
+    }
+    [class^='account'] > .accountList ul li a.active{
+        color: #ff4a81;
+    }
+    [class^='account'] > .accountList > a{
+        position: absolute; top: 50%; transform: translateY(-50%); right: 55px; line-height: 80px;
+    }
+    [for^="uploadPhoto"]{
+        display: inline-block; text-indent: -9999px; width: 60px; height: 60px; vertical-align: middle; cursor: pointer;
+        background: url('../images/ico_photo.png') center no-repeat; border-width: 1px; border-radius: 5px; box-sizing: border-box;
+    }
+    [id^='uploadPhoto']{
+        display: none;
+    }
+    /* * */
+    [class^='accP']{
+        text-align: center; font-weight: 500; color: #494949; line-height: 26px;
+    }
+    p.accPnthofT{
+        margin-bottom: 15px;
+    }
+    p.accPLofT{
+        margin-bottom: 60px;
+    }
+    /* * */
+    [class='titleLi']{
+        font-weight: 500; color: #242424; border-width: 1px 0; padding: 20px 0; display: flex;
+        box-sizing: border-box; text-align: center; line-height: 26px; min-height: 80px;
+    }
+    [class='titleLi'] > span{
+        align-self: center;
+    }
+    /* * */
+    [class='footerTop'], [class='footerUl']{
+        max-width: 1210px; margin: 0 auto;
+    }
+    [class='footerTop'] h3, [class='footerUl'] li h4, .careAboutContainer > div h3{
+        font-weight: 500; color: #ff92b3; line-height: 30px;
+    }
+    [class='footerTop']{
+        margin-bottom: 55px;
+    }
+    [class='footerTop'] h3,
+    .careAboutContainer > div h3{
+        padding-bottom: 25px;
+    }
+    [class='footerTop'] div,
+    .careAboutContainer > div div{
+        border-width: 1px; border-radius: 5px; padding: 40px 20px; box-sizing: border-box;
+    }
+    [class='footerTop'] div p,
+    .careAboutContainer > div div p{
+        font-weight: 500; color: #757575; line-height: 30px;
+    }
+    [class='footerTop'] div p:not(:last-of-type),
+    .careAboutContainer > div div p:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    [class='footerTop'] div a{
+        color: #ff4a81;
+    }
+
+    [class='footerUl']{
+        list-style: none;
+    }
+    [class='footerUl'] li{
+        border-width: 0 0 1px;
+    }
+    [class='footerUl'] li h4{
+        padding-bottom: 15px; position: relative; cursor: pointer;
+    }
+    [class='footerUl'] li:not(:last-of-type){
+        margin-bottom: 50px;
+    }
+    [class='footerUl'] li h4 b{
+        font-weight: 500; color: #494949;
+    }
+    [class='footerUl'] li:has(div.active) h4{
+        border: none;  
+    }
+    [class='footerUl'] li h4::after{
+        content: url('../images/ico_arrowPink.svg'); display: block;
+        position: absolute; right: 0; top: 0; width: 20px;
+        transition: all 0s ease-out; transform: rotate(0deg);
+    }
+    [class='footerUl'] li:has(div.active) h4::after{
+        transform: rotate(180deg);
+    }
+    [class='footerUl'] li div{
+        padding: 40px 20px; display: none;
+    }
+    [class='footerUl'] li div p{
+        font-weight: 500; color: #757575; line-height: 30px;
+    }
+    [class='footerUl'] li div p:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+    [class='footerUl'] li div p a{
+        color: #ff4a81;
+    }
+    #searchPanel{
+        position: fixed; display: flex; justify-content: center; align-items: center;
+        top: -310px; width: 100%; max-height: 300px; padding: 110px 0; box-sizing: border-box;
+        background-color: #fff; border-width: 0 0 1px 0; text-align: center;
+        transition: top 0.4s ease-out;
+    }
+    #searchPanel.active{
+        top: 0;
+    }
+    #searchPanel form div{
+        position: relative;
+    }
+    #searchPanel form div input[type="search"]{
+        min-width: 960px; line-height: 80px; padding: 0 100px 0 35px;
+        font-weight: 500; color: #757575; background-color: #e2e2e2;
+    }
+    #searchPanel form div input[type="submit"]{
+        position: absolute; right: 0; line-height: 80px; padding: 0 55px 0 0;
+        background: url('../images/ico_search.svg') left center / 25px no-repeat ;
+    }
+    #searchPanel > input[type="button"]{
+        margin-left: 35px;
+    }
+    /* ?search panel */
+    #cartPanel{
+        position: fixed; right: -800px; height: 100%; border-width: 0 0 0 1px;
+        padding: 50px 0; box-sizing: border-box; background-color: #fff;
+        transition: right 0.5s ease-in;
+    }
+    #cartPanel.active{
+        right: 0;
+    }
+    #cartPanel > input{
+        position: absolute; right: 55px; z-index: 9;
+    }
+    #cartPanel > div:first-of-type.active{
+        display: none;
+    }
+    #cartPanel div:first-of-type h2{
+        font-weight: 600; color: #242424; padding: 0 55px; margin-bottom: 40px;
+    }
+    #cartPanel > div:first-of-type form ul{
+        padding: 0 55px; list-style: none; height: 100%;
+    }
+    #cartPanel > div:first-of-type form ul li{
+        margin-bottom: 20px;
+    }
+    #cartPanel > div:first-of-type form ul li::after{
+        content: ''; display: block; clear: both;
+    }
+    #cartPanel > div:first-of-type form ul li a{
+        float: left; display: block; width: 155px; height: 155px; border-width: 1px;
+    }
+    #cartPanel > div:first-of-type form ul li a img{
+        width: 100%;
+    }
+    #cartPanel > div:first-of-type form ul li div{
+        float: left; margin-left: 25px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl{
+        margin-bottom: 40px; position: relative;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt{
+        font-weight: 400; color: #242424; padding-right: 170px;
+    }
+    #cartPanel > div:first-of-type form ul li div dl dt small{
+        display: inline-block; width: 100%; margin-top: 10px;
+        font-weight: 500; color: #a8a8a8; 
+    }
+    #cartPanel > div:first-of-type form ul li div dl dd{
+        position: absolute; top: 0; right: 0; font-weight: 600; color: #757575;
+    }
+    #cartPanel > div:first-of-type form ul li div > span{
+        display: inline-block; min-width: 150px;
+    }
+    #cartPanel > div:first-of-type form ul li div > input{
+        float: right; padding: 0 25px; width: 25px; line-height: 60px; box-sizing: border-box;
+        background-image: url('../images/ico_delete.svg'); background-size: 25px;
+        background-position: right center;
+    }
+    #cartPanel > div:first-of-type form > div{
+        position: absolute; bottom: 0; width: 100%; box-sizing: border-box;
+        border-width: 1px 0 0 0; padding: 50px 55px; background-color: #fff;
+    }
+    #cartPanel > div:first-of-type form > div b,
+    #cartPanel > div:first-of-type form > div span{
+        font-weight: 700; color: #242424; padding: 0;
+    }
+    #cartPanel > div:first-of-type form > div span{
+        float: right;
+    }
+    #cartPanel > div:first-of-type form > div div{
+        margin-top: 55px;
+    }
+    #cartPanel > div:first-of-type form > div div a{
+        float: left; text-decoration: none; width: 48.5%;
+    }
+    #cartPanel > div:first-of-type form > div div input{
+        float: right; margin-left: 3%; width: 48.5%;
+    }
+    #cartPanel > div:last-of-type{
+        display: none; height: 100%; box-sizing: border-box;
+        text-align: center; padding: 0 55px; min-width: 800px;
+    }
+    #cartPanel > div:last-of-type.active{
+        display: block;
+    }
+    #cartPanel > div:last-of-type span{
+        display: block; position: relative; top: 50%; transform: translate(0, -50%);
+        font-weight: 600; color: #242424;
+    }
+    #cartPanel > div:last-of-type span a{
+        margin-top: 50px; width: 100%; max-width: 235px;
+        text-decoration: none; display: inline-block;
+    }
+    /* ? cart panel */
+    header{
+        position: fixed; z-index: 10; width: 100%; background-color: #fff;
+    }
+    header div{
+        position: relative; max-height: 140px;
+    }
+    header div *{
+        font-weight: 500; color: #757575; line-height: 140px;
+    }
+    header div > input:first-child{
+        display: none;
+    }
+    header div > input:last-of-type{
+        position: absolute; padding: 0 0 0 40px;
+        background: url('../images/ico_search.svg') left center / 25px no-repeat;
+    }
+    header div h1{
+        margin: 0 auto; max-width: 171px;
+    }
+    header div h1 a{
+        display: block;   
+    }
+    header div h1 a img{
+        width: 100%; vertical-align: middle;
+    }
+    header div span{
+       position: absolute; top: 0; right: 2.86%;
+    }
+    header div span a{
+        text-decoration: none; padding: 0 40px 0 0;
+        background: url('../images/ico_account.svg') right center / 25px no-repeat;
+    }
+    /* ! */
+    header div span a[href*="sign"]{
+        background-image: url('../images/ico_lock.svg');
+    }
+    /* ! */
+    header div span input{
+        padding: 0 40px 0 0; margin-left: 50px;
+        background: url('../images/ico_cart.svg') right center / 25px no-repeat;
+    }
+    header nav{
+        border-width: 1px 0; box-sizing: border-box; max-height: 80px;
+    }
+    header nav input{
+        display: none;
+    }
+    header nav ul{
+        display: flex; justify-content: space-between
+    }
+    header nav ul li{
+        display: inline-block;
+    }
+    header nav ul li a{
+        text-decoration: none; display: block;  max-height: 78px;
+        box-sizing: border-box; line-height: 78px; font-weight: 500; color: #242424;
+    }
+    header nav ul li a.active{
+        color: #ff4a81; border-bottom: 2px solid #ff4a81;
+    }
+    header nav ul li a:after{
+        content: ''; display: block; width: 100%; height: 2px;
+        transition: all 0.3s ease-out; transform: scaleX(0) translateY(-2px); 
+    }
+    header nav ul li a:hover{
+        color: #ff4a81;
+    }
+    header nav ul li a:hover:after{
+         background-color: #ff4a81; transform: scaleX(1) translateY(-2px);
+    }
+    /* * header */
+    footer{
+        border-width: 1px 0 0 0; padding-top: 170px; padding-bottom: 130px;
+    }
+    footer div{
+       float: left; 
+    }
+    footer div a{
+        text-decoration: none;
+    }
+    footer div h2{
+        font-weight: 600; color: #242424; margin-bottom: 30px; pointer-events : none;
+    }
+    footer div *:not(h2){
+        font-weight: 400;
+    }
+    footer div:first-child{
+        width: 48%;
+    }
+    footer div:first-child p{
+        line-height: 35px; max-width: 665px; margin-bottom: 50px; color: #757575;
+    }
+    footer div:first-child > a{
+        color: #a8a8a8; margin-bottom: 40px; display: inline-block;
+    }
+    footer div:first-child ul li{
+        display: inline-block; 
+    }
+    footer div:first-child ul li:not(:first-of-type){
+        margin-left: 40px;
+    }
+    footer div:first-child ul li a{
+        width: 35px; height: 35px; background-position: center; background-repeat: no-repeat; 
+        text-indent: -9999px; display: block;
+    }
+    footer div:first-child ul li:first-of-type a{background-image: url('../images/ico_sns_facebook.svg');}
+    footer div:first-child ul li:nth-of-type(2) a{background-image: url('../images/ico_sns_instargram.svg');}
+    footer div:first-child ul li:last-of-type a{background-image: url('../images/ico_sns_pinterest.svg');}
+    footer div:not(:first-child){
+        width: 24%; margin-left: 2%;
+    }
+    footer div:not(:first-child) ul{
+        list-style: none; display: block;
+    }
+    footer div:not(:first-child) ul li:not(:first-of-type){
+        margin-top: 20px;
+    }
+    footer div:not(:first-child) ul li a{
+        color: #757575;
+    }
+    footer div:not(:first-child) ul li a:hover{
+        color: #ff4a81;
+    }
+    footer > p{
+        clear: both; font-weight: 600; color: #494949; padding-top: 80px;
+    }
+    /* * footer */
+    .pager{
+        position: relative; border-width: 1px 0 0 0; margin-left: auto; margin-left: auto;
+        text-align: center; padding: 40px 0; box-sizing: border-box;
+    }
+    .pager > *{
+        display: inline-block;  vertical-align: middle;
+    }
+    .pager span a{
+        display: inline-block; line-height: 50px; background-position: center;
+    }
+    .pager span:first-of-type a:first-child,
+    .pager span:last-of-type a:last-child{
+        width: 22px;
+    }
+    .pager span:first-of-type a:last-child,
+    .pager span:last-of-type a:first-child{
+        width: 12px;
+    }
+    .pager span:first-of-type a:last-child,
+    .pager span:last-of-type a:last-child{
+        margin-left: 20px;
+    }
+    .pager span:first-of-type a:first-child{
+        background-image: url('../images/btn_arrowLL.svg');
+    }
+    .pager span:first-of-type a:last-child{
+        background-image: url('../images/btn_arrowL.svg'); 
+    }
+    .pager span:last-of-type a:first-child{
+        background-image: url('../images/btn_arrowR.svg');
+    }
+    .pager span:last-of-type a:last-child{
+        background-image: url('../images/btn_arrowRR.svg'); 
+    }
+    .pager ol{
+        margin: 0 50px; 
+    }
+    .pager ol li{
+        display: inline-block; width: 50px; line-height: 50px;
+    }
+    .pager ol li:not(:first-child){
+        margin-left: 15px;
+    }
+    .pager ol li a{
+        text-decoration: none; font-weight: 500; color: #242424; display: block;
+    }
+    .pager ol li a.active{
+        background-color: #ff4a81; border-radius: 25px; color: #fff;
+    }
+    /* * pager */
+}
