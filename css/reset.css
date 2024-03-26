@@ -1,5 +1,4 @@
 /* 리셋 파일로 태그가 기존에 가진 것들을 모두 초기화 시켜주는 파일*/
-/* 추후에 개인 취향으로 고쳐 사용하세요. */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -122,5 +121,5 @@ input, select {
     <script src="js/jquery.bxslider.js"></script>
     <script src="js/jquery.fitvids.js"></script>
  ---- <script src="js/customize.bxslider.js"></script> ---- 실무에선 ㄴㄴ
-    <link rel="stylesheet" href="css/import.css">
+    <link rel="stylesheet" href="css/import.cs">
 */
