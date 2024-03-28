@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    headerScroll();
     indexLock();
     indexLockSign();
     newsletter();
@@ -21,6 +22,26 @@ $(document).ready(function(){
     cardNumb();
     numbOnly();
 });
+
+function headerScroll(){
+    var prevScroll = window.scrollY;
+    var headerHeight = $('header').outerHeight();
+
+    window.onscroll = function(){
+        var currentScroll = window.scrollY;
+
+        if(currentScroll > headerHeight){
+            if (prevScroll > currentScroll) {
+                $("header").css("display", "block"); 
+            } else {
+                $("header").css("display", "none");
+            }
+        }else{
+            $("header").css("display", "block");
+        }
+        prevScroll = currentScroll;
+    }
+}
 
 function indexLock(){
     $(".indexLock a").not('.jsNone').attr("href", "sign_in.html");

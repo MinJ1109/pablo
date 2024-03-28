@@ -2245,18 +2245,17 @@ input[type="radio"]:not(.star):checked{
         text-decoration: none; display: block;
         box-sizing: border-box; line-height: 78px; font-weight: 500; color: #242424;
     }
-    header nav ul li a.active{
-        color: #ff4a81; border-bottom: 2px solid #ff4a81;
-    }
     header nav ul li a:after{
         content: ''; display: block; width: 100%; height: 2px;
-        transition: all 0.3s ease-out; transform: scaleX(0) translateY(-2px); 
+        transition: all 0.3s ease-out; transform: scaleX(0) translateY(-1px); 
     }
-    header nav ul li a:hover{
+    header nav ul li a:hover,
+    header nav ul li a.active{
         color: #ff4a81;
     }
-    header nav ul li a:hover:after{
-         background-color: #ff4a81; transform: scaleX(1) translateY(-2px);
+    header nav ul li a:hover:after,
+    header nav ul li a.active:after{
+         background-color: #ff4a81; transform: scaleX(1) translateY(-1px);
     }
     footer{
         border-width: 1px 0 0 0; padding-top: 170px; padding-bottom: 130px;
