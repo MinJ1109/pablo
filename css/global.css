@@ -34,7 +34,6 @@ select{
 select::-ms-expand{
     display: none;
 }
-/* * * */
 #searchPanel, #cartPanel, .numberComponent,
 #cartPanel > div:first-of-type form ul li a,
 #cartPanel > div:first-of-type form > div,
@@ -112,7 +111,6 @@ div[class^="payStep"] form > div > div:last-child > div:last-of-type ul:first-of
 .pager,footer{
     border-color: #cfcfcf; border-style: solid;
 }
-/* * border */
 .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input),
 #searchPanel form div input[type="submit"],
 .numberComponent input:not(input[type='number']),
@@ -146,7 +144,6 @@ input[type="radio"]:not(.star){
 input[type="radio"]:not(.star):checked{
     background: url("../images/btn_radioOn.svg") center no-repeat;
 }
-/* * button */
 
 @media screen and (max-width: 767px){
     .whiteBtn, .blackBtn, select,
@@ -345,7 +342,6 @@ input[type="radio"]:not(.star):checked{
     .accountMainContainer > ul li span:first-child{
         font-size: 32px;
     }
-    /* * font */
     .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input){
         background-image: url('../images/ico_close.svg');
         width: 20px; height: 20px;
@@ -370,7 +366,6 @@ input[type="radio"]:not(.star):checked{
     input[type="radio"]:not(.star){
         width: 20px; height: 20px;
     }
-    /* * button */
     .numberComponent{
         text-align: center; background-color: #fff; 
         border-width: 1px; border-radius: 5px; box-sizing: border-box;
@@ -395,7 +390,6 @@ input[type="radio"]:not(.star):checked{
         background-image: url('../images/btn_plus.svg');
         background-position: right 15px center;
     }
-    /* * number component */
     header div, header nav,
     .mainContainer .collaboSlider + div, .listContainer > *:not(.pager),
     .prodDeContainer, .cartDeContainer,
@@ -444,7 +438,6 @@ input[type="radio"]:not(.star):checked{
     .returnContainer form > div{
         margin: 0 auto; text-align: center; padding: 0 10px; box-sizing: border-box;
     }
-    /* * */
     .pageMainTilte{
         font-weight: 600; color: #000; text-align: center; padding: 50px 10px 40px; line-height: 24px;
     }
@@ -476,7 +469,6 @@ input[type="radio"]:not(.star):checked{
     .underline_a8:hover{
         background-color: #ff4a81;
     }
-    /* * */
     [class^='account'] > .accountList{
         border-width: 1px; padding: 0 15px; border-radius: 5px; box-sizing: border-box;
         margin-bottom: 85px; width: 100%; height: 50px; overflow-x: scroll;
@@ -510,7 +502,6 @@ input[type="radio"]:not(.star):checked{
     [id^='uploadPhoto']{
         display: none;
     }
-    /* * */
     [class^='accP']{
         text-align: center; font-weight: 500; color: #494949; line-height: 16px;
     }
@@ -520,7 +511,6 @@ input[type="radio"]:not(.star):checked{
     p.accPLofT{
         margin-bottom: 40px;
     }
-    /* * */
     [class='titleLi']{
         font-weight: 500; color: #242424; border-width: 1px 0; padding: 20px 0; display: flex;
         box-sizing: border-box; text-align: center; line-height: 23px; min-height: 60px;
@@ -528,7 +518,6 @@ input[type="radio"]:not(.star):checked{
     [class='titleLi'] > span{
         align-self: center;
     }
-    /* * */
     [class='footerTop'], [class='footerUl']{
         max-width: 1210px; margin: 0 auto;
     }
@@ -625,7 +614,6 @@ input[type="radio"]:not(.star):checked{
     #searchPanel > input[type="button"]{
         margin-left: 20px; padding: 0;
     }
-    /* ?search panel */
     #cartPanel{
         position: fixed; right: -100%; height: 100%; width: 100%;
         padding: 25px 0; box-sizing: border-box; background-color: #fff;
@@ -717,7 +705,6 @@ input[type="radio"]:not(.star):checked{
         margin-top: 25px; width: 100%; max-width: 235px;
         text-decoration: none; display: inline-block;
     }
-    /* ? cart panel */
     header{
         position: fixed; z-index: 10; width: 100%; background-color: #fff;
     }
@@ -783,7 +770,6 @@ input[type="radio"]:not(.star):checked{
     header nav ul li a:hover{
         color: #ff4a81;
     }
-    /* * header */
     footer{
         border-width: 1px 0 0 0; padding-top: 80px; padding-bottom: 60px;
     }
@@ -854,7 +840,6 @@ input[type="radio"]:not(.star):checked{
     footer > p{
         clear: both; font-weight: 600; color: #494949; padding-top: 50px;
     }
-    /* * footer */
     .pager{
         position: relative; border-width: 1px 0 0 0; margin-left: auto; margin-left: auto;
         text-align: center; padding: 20px 10px; box-sizing: border-box;
@@ -906,9 +891,7 @@ input[type="radio"]:not(.star):checked{
     .pager ol li a.active{
         color: #ff4a81;
     }
-    /* * pager */
 }
-
 /* ! mobile */
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -1108,7 +1091,6 @@ input[type="radio"]:not(.star):checked{
     .accountMainContainer > ul li span:first-child{
         font-size: 50px;
     }
-    /* * font */
     .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input){
         background-image: url('../images/ico_close.svg');
         width: 20px; height: 20px;
@@ -1133,7 +1115,6 @@ input[type="radio"]:not(.star):checked{
     input[type="radio"]:not(.star){
         width: 20px; height: 20px;
     }
-    /* * button */
     .numberComponent{
         text-align: center; background-color: #fff; 
         border-width: 1px; border-radius: 5px; box-sizing: border-box;
@@ -1158,7 +1139,6 @@ input[type="radio"]:not(.star):checked{
         background-image: url('../images/btn_plus.svg');
         background-position: right 20px center;
     }
-    /* * number component */
     header div, header nav,
     .mainContainer .collaboSlider + div, .listContainer > *:not(.pager),
     .prodDeContainer, .cartDeContainer,
@@ -1209,7 +1189,6 @@ input[type="radio"]:not(.star):checked{
     .newAddrsContainer div{
         max-width: 520px; margin: 0 auto; text-align: center;
     }
-    /* * */
     .pageMainTilte{
         font-weight: 600; color: #000; text-align: center; padding-top: 60px; padding-bottom: 50px;
     }
@@ -1241,7 +1220,6 @@ input[type="radio"]:not(.star):checked{
     .underline_a8:hover{
         color: #ff4a81;
     }
-    /* * */
     [class^='account'] > .accountList{
         border-width: 1px; padding: 0 15px; position: relative; border-radius: 5px; box-sizing: border-box;
         margin-bottom: 50px;
@@ -1272,7 +1250,6 @@ input[type="radio"]:not(.star):checked{
     [id^='uploadPhoto']{
         display: none;
     }
-    /* * */
     [class^='accP']{
         text-align: center; font-weight: 500; color: #494949; line-height: 20px;
     }
@@ -1282,7 +1259,6 @@ input[type="radio"]:not(.star):checked{
     p.accPLofT{
         margin-bottom: 50px;
     }
-    /* * */
     [class='titleLi']{
         font-weight: 500; color: #242424; border-width: 1px 0; padding: 20px 0; display: flex;
         box-sizing: border-box; text-align: center; line-height: 23px; min-height: 60px;
@@ -1290,7 +1266,6 @@ input[type="radio"]:not(.star):checked{
     [class='titleLi'] > span{
         align-self: center;
     }
-    /* * */
     [class='footerTop'], [class='footerUl']{
         max-width: 1210px; margin: 0 auto;
     }
@@ -1385,7 +1360,6 @@ input[type="radio"]:not(.star):checked{
     #searchPanel > input[type="button"]{
         margin-left: 30px; padding: 0;
     }
-    /* ?search panel */
     #cartPanel{
         position: fixed; right: -600px; height: 100%; border-width: 0 0 0 1px;
         padding: 35px 0; box-sizing: border-box; background-color: #fff;
@@ -1477,7 +1451,6 @@ input[type="radio"]:not(.star):checked{
         margin-top: 35px; width: 100%; max-width: 235px;
         text-decoration: none; display: inline-block;
     }
-    /* ? cart panel */
     header{
         position: fixed; z-index: 10; width: 100%; background-color: #fff;
     }
@@ -1510,11 +1483,9 @@ input[type="radio"]:not(.star):checked{
         text-decoration: none; padding: 0 30px 0 0;
         background: url('../images/ico_account.svg') right center / 20px no-repeat;
     }
-    /* ! */
     header div span a[href*="sign"]{
         background-image: url('../images/ico_lock.svg');
     }
-    /* ! */
     header div span input{
         padding: 0 30px 0 0; margin-left: 35px;
         background: url('../images/ico_cart.svg') right center / 20px no-repeat;
@@ -1548,7 +1519,6 @@ input[type="radio"]:not(.star):checked{
     header nav ul li a:hover:after{
          background-color: #ff4a81; transform: scaleX(1) translateY(-2px);
     }
-    /* * header */
     footer{
         border-width: 1px 0 0 0; padding-top: 115px; padding-bottom: 85px;
     }
@@ -1619,7 +1589,6 @@ input[type="radio"]:not(.star):checked{
     footer > p{
         clear: both; font-weight: 600; color: #494949; padding-top: 60px;
     }
-    /* * footer */
     .pager{
         position: relative; border-width: 1px 0 0 0; margin-left: auto; margin-left: auto;
         text-align: center; padding: 30px 0; box-sizing: border-box;
@@ -1669,9 +1638,7 @@ input[type="radio"]:not(.star):checked{
     .pager ol li a.active{
         background-color: #ff4a81; border-radius: 25px; color: #fff;
     }
-    /* * pager */
 }
-
 /* ! tablet */
 
 @media screen and (min-width: 1280px){
@@ -1868,7 +1835,6 @@ input[type="radio"]:not(.star):checked{
     .accountMainContainer > ul li span:first-child{
         font-size: 90px;
     }
-    /* * font */
     .closeBtn:not(#emailSendPopup input, #withdrawaReconfirm input, #deleteAlert input){
         background-image: url('../images/ico_close.svg');
         width: 25px; height: 25px;
@@ -1893,7 +1859,6 @@ input[type="radio"]:not(.star):checked{
     input[type="radio"]:not(.star){
         width: 25px; height: 25px;
     }
-    /* * button */
     .numberComponent{
         text-align: center; background-color: #fff; 
         border-width: 1px; border-radius: 5px; box-sizing: border-box;
@@ -1918,7 +1883,6 @@ input[type="radio"]:not(.star):checked{
         background-image: url('../images/btn_plus.svg');
         background-position: right 20px center;
     }
-    /* * number component */
     header div, header nav,
     .mainContainer .collaboSlider + div, .listContainer > *:not(.pager),
     .prodDeContainer, .cartDeContainer,
@@ -1968,7 +1932,6 @@ input[type="radio"]:not(.star):checked{
     .returnContainer form > div{
         max-width: 520px; margin: 0 auto; text-align: center;
     }
-    /* * */
     .pageMainTilte{
         font-weight: 600; color: #000; text-align: center; padding-top: 80px; padding-bottom: 60px;
     }
@@ -2000,7 +1963,6 @@ input[type="radio"]:not(.star):checked{
     .underline_a8:hover{
         color: #ff4a81;
     }
-    /* * */
     [class^='account'] > .accountList{
         border-width: 1px; padding: 0 55px; position: relative; border-radius: 5px; box-sizing: border-box;
         margin-bottom: 60px;
@@ -2031,7 +1993,6 @@ input[type="radio"]:not(.star):checked{
     [id^='uploadPhoto']{
         display: none;
     }
-    /* * */
     [class^='accP']{
         text-align: center; font-weight: 500; color: #494949; line-height: 26px;
     }
@@ -2041,7 +2002,6 @@ input[type="radio"]:not(.star):checked{
     p.accPLofT{
         margin-bottom: 60px;
     }
-    /* * */
     [class='titleLi']{
         font-weight: 500; color: #242424; border-width: 1px 0; padding: 20px 0; display: flex;
         box-sizing: border-box; text-align: center; line-height: 26px; min-height: 80px;
@@ -2049,7 +2009,6 @@ input[type="radio"]:not(.star):checked{
     [class='titleLi'] > span{
         align-self: center;
     }
-    /* * */
     [class='footerTop'], [class='footerUl']{
         max-width: 1210px; margin: 0 auto;
     }
@@ -2140,7 +2099,6 @@ input[type="radio"]:not(.star):checked{
     #searchPanel > input[type="button"]{
         margin-left: 35px;
     }
-    /* ?search panel */
     #cartPanel{
         position: fixed; right: -800px; height: 100%; border-width: 0 0 0 1px;
         padding: 50px 0; box-sizing: border-box; background-color: #fff;
@@ -2232,7 +2190,6 @@ input[type="radio"]:not(.star):checked{
         margin-top: 50px; width: 100%; max-width: 235px;
         text-decoration: none; display: inline-block;
     }
-    /* ? cart panel */
     header{
         position: fixed; z-index: 10; width: 100%; background-color: #fff;
     }
@@ -2265,11 +2222,9 @@ input[type="radio"]:not(.star):checked{
         text-decoration: none; padding: 0 40px 0 0;
         background: url('../images/ico_account.svg') right center / 25px no-repeat;
     }
-    /* ! */
     header div span a[href*="sign"]{
         background-image: url('../images/ico_lock.svg');
     }
-    /* ! */
     header div span input{
         padding: 0 40px 0 0; margin-left: 50px;
         background: url('../images/ico_cart.svg') right center / 25px no-repeat;
@@ -2303,7 +2258,6 @@ input[type="radio"]:not(.star):checked{
     header nav ul li a:hover:after{
          background-color: #ff4a81; transform: scaleX(1) translateY(-2px);
     }
-    /* * header */
     footer{
         border-width: 1px 0 0 0; padding-top: 170px; padding-bottom: 130px;
     }
@@ -2359,7 +2313,6 @@ input[type="radio"]:not(.star):checked{
     footer > p{
         clear: both; font-weight: 600; color: #494949; padding-top: 80px;
     }
-    /* * footer */
     .pager{
         position: relative; border-width: 1px 0 0 0; margin-left: auto; margin-left: auto;
         text-align: center; padding: 40px 0; box-sizing: border-box;
@@ -2409,5 +2362,4 @@ input[type="radio"]:not(.star):checked{
     .pager ol li a.active{
         background-color: #ff4a81; border-radius: 25px; color: #fff;
     }
-    /* * pager */
 }
