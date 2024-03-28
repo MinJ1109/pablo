@@ -2236,7 +2236,7 @@ input[type="radio"]:not(.star):checked{
         display: none;
     }
     header nav ul{
-        display: flex; justify-content: space-between
+        display: flex; justify-content: space-between;
     }
     header nav ul li{
         display: inline-block;
