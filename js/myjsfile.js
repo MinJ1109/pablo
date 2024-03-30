@@ -347,16 +347,16 @@ function cardNumb(){
 
         switch(cardNOne){
             case "3" :
-                card.attr({ src: "../images/ico_payment01.png" });
+                card.attr({ src: "images/ico_payment01.png" });
                 break;
             case "4" :
-                card.attr({ src: "../images/ico_payment04.png" });
+                card.attr({ src: "images/ico_payment04.png" });
                 break;
             case "5" :
-                card.attr({ src: "../images/ico_payment02.png" });
+                card.attr({ src: "images/ico_payment02.png" });
                 break;
             case "6" :
-                card.attr({ src: "../images/ico_payment03.png" });
+                card.attr({ src: "images/ico_payment03.png" });
                 break;
             default:
                 card.css("display","none");
