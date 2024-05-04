@@ -1,6 +1,7 @@
 .fontQuick{
     font-family: 'Quicksand';
 }
+
 body *:not(.fontQuick){
     font-family: 'Poppins';
 }
