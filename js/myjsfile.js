@@ -249,30 +249,15 @@ function toggleClick(){
         $(this).next().toggleClass("active");
         $(this).next().slideToggle(350);
     });
-    // if (window.matchMedia("(min-width: 1279px)").matches){
-    //     $('footer div:not(:first-child) ul').css('pointer-events','none');
-    //     $('footer div:not(:first-child) ul').style='';
-    //     $('footer div:not(:first-child) ul').display = 'block';
-    //     $('footer div:not(:first-child) ul').style.display = "block";
-    //     $('footer div:not(:first-child) ul').not('.active').css('display','block');
-    //   } else {
-    //     $('footer div:not(:first-child) h2').click(function(){
-    //         $(this).next().toggleClass("active");
-    //         $(this).next().slideToggle(350);
-    //     });  
-    //   }
       
     $("div[class^='payStep'] form > div > div:last-child > div:first-of-type").click(function(){
-        // var h2Children = $("div[class^='payStep'] form > div > div:last-child > div:first-of-type h2 span");
 
         $(this).next().toggleClass("active");
 
         if($(this).next().hasClass('active')){
             $(this).children('h2').text("Hide order summary");
-            // $(this).children('h2').append(h2Children);
         }else{
             $(this).children('h2').text("Show order summary");
-            // $(this).children('h2').append(h2Children);
         }
     }
     );
