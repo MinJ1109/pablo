@@ -25,7 +25,12 @@ $(document).ready(function(){
 
 function slideAll(){
     $(".mainSlider").bxSlider({
-        controls:true
+        controls:true,
+        minSlides: 1,
+        maxSlides: 3,
+        moveSlides: 1,
+        slideMargin: 0,
+        adaptiveHeight: true
     });
 
     $(".tickerSlider").bxSlider({
