@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    mainslider();
     slideAll();
     headerScroll();
     indexLock();
@@ -23,16 +24,13 @@ $(document).ready(function(){
     numbOnly();
 });
 
-function slideAll(){
-    $(window).on('load', function(){
-        if ($('.bxslider').data('bxSlider')) {
-          $('.bxslider').data('bxSlider').destroySlider();
-        }
-    });
-    
+function mainslider(){
     $(".mainSlider").bxSlider({
         controls:true
     });
+}
+
+function slideAll(){
 
     $(".tickerSlider").bxSlider({
         minSlides: 6,
