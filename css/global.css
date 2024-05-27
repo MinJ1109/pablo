@@ -27,6 +27,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {position: absolute; width
     background: #fff;
     margin: 0 auto; 
 }
+.bx-viewport{
+    height: auto !important;
+}
 select{
     -o-appearance: none; -webkit-appearance: none; -moz-appearance: none;
     appearance: none; background-color: transparent; border: none;
