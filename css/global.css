@@ -30,7 +30,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {position: absolute; width
 .bx-viewport{
     height: auto !important;
 }
-.bx-viewport ul li{
+.mainContainer .mainSlider ul li{
     width: 100vw !important;
 }
 select{
