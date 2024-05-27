@@ -25,7 +25,8 @@ $(document).ready(function(){
 
 function slideAll(){
     $(".mainSlider").bxSlider({
-        controls:true
+        controls:true,
+        slideWidth:'auto'
     });
 
     $(".tickerSlider").bxSlider({

@@ -30,6 +30,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {position: absolute; width
 .bx-viewport{
     height: auto !important;
 }
+.bx-viewport ul li{
+    width: 100vw !important;
+}
 select{
     -o-appearance: none; -webkit-appearance: none; -moz-appearance: none;
     appearance: none; background-color: transparent; border: none;
