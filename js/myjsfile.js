@@ -1,11 +1,11 @@
 $(document).ready(function(){
+    slideAll();
     headerScroll();
     indexLock();
     indexLockSign();
     newsletter();
     basicCount();
     myQnADeMobile();
-    slideAll();
     
     $('.closeBtn').click(closeparent);
     addActive(); 
@@ -22,7 +22,68 @@ $(document).ready(function(){
     cardNumb();
     numbOnly();
 });
+function slideAll(){
+    $(".mainSlider").bxSlider({
+        controls:true
+    });
 
+    $(".tickerSlider").bxSlider({
+        minSlides: 6,
+        maxSlides: 7,
+        slideWidth: 1920,
+        ticker: true,
+        speed: 30000
+    });
+
+    $(".newProdSlider").bxSlider({
+        slideWidth: 550,
+        minSlides: 1,
+        maxSlides: 4,
+        moveSlides: 1,
+        infiniteLoop: true,
+        pager: false,
+        touchEnabled: false,
+        nextSelector: '.shopSlider .nextControls',
+        prevSelector: '.shopSlider .prevControls',
+        nextText: 'Next',
+        prevText: 'Prev'
+        
+    });
+    $(".collSlider1").bxSlider({
+        slideWidth: 550,
+        minSlides: 1,
+        maxSlides: 4,
+        moveSlides: 1,
+        infiniteLoop: true,
+        pager: false,
+        touchEnabled: false,
+        nextSelector: '.collectSlider .nextControls',
+        prevSelector: '.collectSlider .prevControls',
+        nextText: 'Next',
+        prevText: 'Prev'
+    });
+
+    $(".collSlider2").bxSlider({
+        slideWidth: 400,
+        minSlides: 1,
+        maxSlides: 5,
+        moveSlides: 1,
+        infiniteLoop: true,
+        pager: false,
+        touchEnabled: false,
+        nextSelector: '.collaboSlider .nextControls',
+        prevSelector: '.collaboSlider .prevControls',
+        nextText: 'Next',
+        prevText: 'Prev'
+    });
+
+    $(".detailSlider").bxSlider({
+        pagerCustom: '.detailPager',
+        slideMargin: 1,
+        minSlides: 1,
+        maxSlides: 1
+    });
+}
 function headerScroll(){
     var prevScroll = window.scrollY;
     var headerHeight = $('header').outerHeight();
@@ -88,68 +149,7 @@ function myQnADeMobile(){
         window.location.href = "detailQnA.html";
     });
 }
-function slideAll(){
-    $(".mainSlider").bxSlider({
-        controls:true
-    });
 
-    $(".tickerSlider").bxSlider({
-        minSlides: 6,
-        maxSlides: 7,
-        slideWidth: 1920,
-        ticker: true,
-        speed: 30000
-    });
-
-    $(".newProdSlider").bxSlider({
-        slideWidth: 550,
-        minSlides: 1,
-        maxSlides: 4,
-        moveSlides: 1,
-        infiniteLoop: true,
-        pager: false,
-        touchEnabled: false,
-        nextSelector: '.shopSlider .nextControls',
-        prevSelector: '.shopSlider .prevControls',
-        nextText: 'Next',
-        prevText: 'Prev'
-        
-    });
-    $(".collSlider1").bxSlider({
-        slideWidth: 550,
-        minSlides: 1,
-        maxSlides: 4,
-        moveSlides: 1,
-        infiniteLoop: true,
-        pager: false,
-        touchEnabled: false,
-        nextSelector: '.collectSlider .nextControls',
-        prevSelector: '.collectSlider .prevControls',
-        nextText: 'Next',
-        prevText: 'Prev'
-    });
-
-    $(".collSlider2").bxSlider({
-        slideWidth: 400,
-        minSlides: 1,
-        maxSlides: 5,
-        moveSlides: 1,
-        infiniteLoop: true,
-        pager: false,
-        touchEnabled: false,
-        nextSelector: '.collaboSlider .nextControls',
-        prevSelector: '.collaboSlider .prevControls',
-        nextText: 'Next',
-        prevText: 'Prev'
-    });
-
-    $(".detailSlider").bxSlider({
-        pagerCustom: '.detailPager',
-        slideMargin: 1,
-        minSlides: 1,
-        maxSlides: 1
-    });
-}
 
 
 function closeparent(){
