@@ -22,7 +22,14 @@ $(document).ready(function(){
     cardNumb();
     numbOnly();
 });
+
 function slideAll(){
+    $(window).on('load', function(){
+        if ($('.bxslider').data('bxSlider')) {
+          $('.bxslider').data('bxSlider').destroySlider();
+        }
+    });
+    
     $(".mainSlider").bxSlider({
         controls:true
     });
